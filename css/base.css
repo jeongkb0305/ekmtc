@@ -7,7 +7,7 @@ article, aside, details, figcaption, figure, dialog,
 footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; }
 article, aside, details, figcaption, figure, dialog,
 footer, header, hgroup, menu, main, nav, section { display: block; }
-a:link    { color:#000; text-decoration:none; }
+a:link    { color:#000000; text-decoration:none; }
 a:visited { color:#000; text-decoration:none; }
 a:hover   { color:#000; text-decoration:none; }
 a:active  { color:#000; text-decoration:none; }
