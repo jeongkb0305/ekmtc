@@ -80,7 +80,7 @@ a.button { color:#0641b8; }
 .tbl_col th { padding:6px 5px 4px; border-top:1px solid #e1e3eb; border-left:1px solid #e1e3eb; background:#f6f9ff; color:#075bb9; font-weight: 500;}
 .tbl_col td { padding:6px 5px 4px; border-top:1px solid #e1e3eb; border-left:1px solid #e1e3eb; color:#000000; font-weight: 300; text-align:center; }
 .tbl_col th:first-child, .tbl_col td:first-child {  border-left:0; }
-.tbl_col td .selector {/*text-align:left;*/}
+
 
 .tbl_list,.tbl_list th,.tbl_list td {  font-size: 14px; }
 .tbl_list { width:100%; border-bottom:1px solid #dddddd; }
