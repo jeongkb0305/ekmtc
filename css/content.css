@@ -24,7 +24,7 @@ h2.content_title .essen::after {
 	z-index: -1;
 }*/
 
-.tit_label {display:inline-block; margin-right:10px; color: #075bb9; font-weight:500;  font-size:14px; }
+.tit_label { display:inline-block; margin-right:10px; color: #075bb9; font-weight:500;  font-size:14px; }
 .tot_num { margin-bottom:10px; color:#000; font-size:14px; font-weight:400; }
 .tot_num span.num {  color:#0641B8; font-size:15px; font-weight:500; font-family: 'Roboto' }
 
@@ -80,7 +80,7 @@ a.button { color:#0641b8; }
 .tbl_col th { padding:6px 5px 4px; border-top:1px solid #e1e3eb; border-left:1px solid #e1e3eb; background:#f6f9ff; color:#075bb9; font-weight: 500;}
 .tbl_col td { padding:6px 5px 4px; border-top:1px solid #e1e3eb; border-left:1px solid #e1e3eb; color:#000000; font-weight: 300; text-align:center; }
 .tbl_col th:first-child, .tbl_col td:first-child {  border-left:0; }
-.tbl_col td .selector { /*text-align:left;*/ }
+.tbl_col td .selector {/*text-align:left;*/}
 
 .tbl_list,.tbl_list th,.tbl_list td {  font-size: 14px; }
 .tbl_list { width:100%; border-bottom:1px solid #dddddd; }
@@ -93,11 +93,30 @@ a.button { color:#0641b8; }
 .tbl_list.font_sm td div.selector span,  .tbl_list.font_sm td div.selector select option { font-size:12px !important; }
 .tbl_list td.subject, .tbl_list td.subject_view { text-align:left; }
 .tbl_list td.subject_view { padding-left:10px; text-align:left; font-weight:500; color:#0664BF; }
-.tbl_list td.subject a { }
+.tbl_list td.subject a { margin-right:5px; }
 .tbl_list td.subject a:hover, .tbl_list td .attach a:hover { text-decoration:underline; }
-.tbl_list td .subject_view_cont { padding:10px 20px; line-height:18px; } 
-.tbl_list td .subject_view_cont p { margin:8px 0; }
-.tbl_list td .file_box { margin:2px 0;}
+.tbl_list td.important a, .tbl_list td.important a:hover{ color:#FA0000; }
+.tbl_list td .attach a, .tbl_list td .attach a:hover { color:#666; }
+.tbl_list td.subject_view_tit { font-size:24px; font-weight:500; text-align:left; border-top:0; }
+.tbl_list td.subject_view_tit .important { color:#D40000; }
+.tbl_list td.subject_view_tit .label { vertical-align:middle;  margin: 0 5px 4px 0;  }
+
+.tbl_list tr.subject_view_titinfo td {  border-top:0; padding:6px 5px 12px 5px;  font-size:15px; font-weight:200; color:#666 }
+.tbl_list tr.subject_view_titinfo td  span.tit { margin-right:15px; font-weight:500; color:#000; }
+.tbl_list tr.subject_view_titinfo td  span.tit.bar { position:relative; z-index: 1; }
+.tbl_list tr.subject_view_titinfo td  span.tit.bar::after {
+	content: '';
+	position: absolute;
+	left:-25px;
+	bottom:4px;
+	width:1px;
+	height:12px;
+	background-color: #cdcdcd;
+	z-index: -1;
+}
+.tbl_list td .subject_view_cont { padding:10px 10px 0 0; line-height:18px; } 
+.tbl_list td .subject_view_cont p { margin:5px 0 20px; }
+.tbl_list td .file_box { margin:2px 0;  color:#666;}
 
      
     /* table input 100% */
@@ -273,7 +292,9 @@ a.button { color:#0641b8; }
 .tbl_icon.arrow:hover { width:24px; height:24px; background-image:url(../images/common/icon_tbl_all.png); background-position: -25px 0; }
 .tbl_icon.help   { width:20px; height:20px; background-image:url(../images/common/icon_help.png) }
 .tbl_icon.search  { width:23px; height:19px; background-image:url(../images/common/icon_search.png) }
-.tbl_icon.calendar   { width:13px; height:12px; background-image:url(../images/common/icon_calendar.png); }
+.tbl_icon.calendar{ width:13px; height:12px; background-image:url(../images/common/icon_calendar.png); }
+.tbl_icon.attach  { width:14px; height:14px; background-image:url(../images/common/icon_attach.png) }
+.tbl_icon.new     { width:16px; height:16px; background-image:url(../images/common/icon_new.png); margin-bottom:2px; }
 /*.tbl_icon.file  { background-image:url(../images/common/icon_file.png) }*/
 .tbl_icon.filedel { width:24px; height:24px; background-image:url(../images/common/icon_filedel.png) } 
 
@@ -326,7 +347,7 @@ a.button { color:#0641b8; }
 .label.red    { background-color : #ec777d; }
 .label.pink   { background-color : #e84c4c; }
 .label.blue   { background-color : #87a7db; }
-.label.red    { background-color : #ec777d; }
+.label.important    { width: 38px; background-color : #FFE5E5; color:#FF4040; border:1px solid #FF7B7B; border-radius:2px;  }
 
  /* 화면분할 layout 박스 */
 .lybox { z-index:100; position:relative }
