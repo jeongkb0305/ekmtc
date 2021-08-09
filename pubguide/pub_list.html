@@ -1,0 +1,1830 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+
+<style type="text/css">
+	/*  tbl_type */
+	.tbl_type,.tbl_type th,.tbl_type td { border:0}
+	.tbl_type { width:100%; border-bottom:1px solid #e1e3eb; font-family:'돋움',dotum; font-size:12px; text-align:center; border-collapse:collapse }
+	.tbl_type caption { display:none }
+	.tbl_type tfoot { background-color:#f5f7f9; font-weight:bold }
+	.tbl_type th { padding:7px 0 4px; border-top:1px solid #e1e3eb; border-right:1px solid #e1e3eb; border-left:1px solid #e1e3eb; background-color:#f6f9ff; color:#075bb9; font-family:'돋움',dotum; font-size:12px; font-weight:bold; }
+	.tbl_type th.col1 { width:8%; } 
+	.tbl_type th.col2 { width:11%; }
+	.tbl_type th.col3 { width:15%; }
+	.tbl_type th.col4 { width:13%; }
+	.tbl_type th.col5 { width:16%; }
+	.tbl_type th.col6 { width:9%; }
+	.tbl_type th.col7 { width:3%; }
+	.tbl_type th.col8 { width:15%; }
+	.tbl_type th.col9 { width:10%; }
+
+	.tbl_type td { padding:3px 10px 2px; border:1px solid #e1e3eb; color:#4c4c4c; text-align:left; }
+	.tbl_type td.ranking { font-weight:bold }
+	.tbl_type td a { color:#F2084F; }
+	.tbl_type td span   { position:relative; display:inline-block; width:40px; height:16px; }
+	.tbl_type td span::after { 	
+		content: ''; position: absolute; left:0; top:0;	width:40px; text-align:center; 
+		font-size:12px; color:#000; z-index: 2;
+	}
+   .tbl_type td span.keep::after   { content: '유지';  color:#fff; background-color:#FFD168; }
+   .tbl_type td span.change::after { content: '변경';  color:#fff; background-color:#73BDEE; }
+   .tbl_type td span.new::after    { content: '신규';  color:#fff; background-color:#ABF3B3; }
+   .tbl_type td span.yellow::after { margin-left:5px; width:45px; letter-spacing:-1px; content: 'SB없이'; color:#777; background-color:#F9F900; } 
+    
+   .tbl_type td.ok span { width:20px; }
+   .tbl_type td.ok span.ok::after   { content: '○';  color:#F1084F; width:20px; text-align:center; background-color:#fff; }
+   .tbl_type td.del a { text-decoration: line-through; }
+</style>
+
+</head>
+
+<body>
+<div class="wrap">	
+	<div class="header"><!-- header -->
+		<div class="inner_header" style="width:1280px; margin:0 auto;">
+			<h1 class="logo"><a href="home">e-kmtc</a></h1>	
+			<p style="width:200px; font-size:26px; font-weight:500; margin:5px auto 0">
+			    퍼블리싱 현황판
+			</p>
+			<div class="wrap_util">
+			    <ul class="util">
+					<li><a href="#">ㅇㅇㅇㅇㅇ</a></li>					
+				</ul>
+			</div>
+		</div>		
+	</div><!-- header // -->
+        
+	<div class="container_ekmtc"><!-- container_ekmtc -->
+
+		<div class="content"><!-- content -->	
+			<h1 class="page_title">퍼블리싱 리스트</h1>
+		    <div class="content_box" style=""><!-- content_box -->
+
+				<h2 class="content_title">Layout, 유형별 샘플 가이드</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+					<tr>
+						<td>sub_layout</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="sub_layout.html" target="_black">sub_layout</a></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>본문작업용</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="content.html" target="_black">content</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>popup 작업용</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="popup.html" target="_black">popup</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>				
+					<tr>
+						<td>유형별 샘플</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="sub_all.html" target="_black">sub_all</a></td>
+						<td></td>
+						<td>첨부파일 부분 : 보류</td>
+						<td></td>
+					</tr>
+					
+	                <tr>
+						<td>popup 유형</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="popup_all.html" target="_black">popup_all</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>font 참고</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="font.html" target="_black">font</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+			       </tbody>
+				</table>
+
+				<h2 class="content_title">메인, 개인화, UTIL [pubcom]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+					<tr>
+						<td>메인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Login 전 화면</td>
+						<td>8-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Login 후 화면</td>
+						<td>9-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>MAIN(Customer)</td>
+						<td>2-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>통합검색</td>
+						<td></td>
+						<td></td>
+						<td>통합검색 결과</td>
+						<td>41</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>화물추적</td>
+						<td>입력</td>
+						<td></td>
+						<td>화물추적</td>
+						<td>2-2</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>스케줄</td>
+						<td>입력</td>
+						<td></td>
+						<td>스케줄 검색 필드</td>
+						<td>2-2</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>ID 찾기</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubcom/U1083.html" target="_blank">U1083</a></td>
+						<td></td>
+						<td>~</td>
+						<td><span class="change"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>PW 찾기</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>U1083</td>
+						<td></td>
+						<td></td>
+						<td><span class="change"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>ID중복 확인 팝업</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubcom/U1082P0.html" target="_blank">U1082P0</a></td>
+						<td></td>
+						<td>~</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>파일첨부 팝업</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>U1082P1</td>
+						<td></td>
+						<td>파일첨부부분 보류</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			
+
+					<!-- 나의 정보  -->
+					<tr>
+						<td>나의 정보</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>회원정보</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>Report</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>Mileage</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>위수임</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>설정</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<!-- 나의 정보 //  -->
+
+					<!-- 고객센터  -->
+					<tr>
+						<td>고객센터</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>공지사항</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Newwork</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>자료실</td>
+						<td>목록</td>
+						<td></td>
+						<td>자료실 목록</td>
+						<td><a href="../pubcom/임시027.html" target="_blank">임시027</a></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+				    <tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td></td>
+						<td>자료실 상세</td>
+						<td><a href="../pubcom/임시028.html" target="_blank">임시028</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+				    <tr>
+						<td></td>
+						<td>FAQ</td>
+						<td>목록</td>
+						<td></td>
+						<td>FAQ 목록</td>
+						<td>임시025</td>
+						<td></td>
+						<td>X</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td></td>
+						<td>FAQ 상세</td>
+						<td>임시026</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+
+				    <tr>
+						<td></td>
+						<td>정보조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+                    <!-- 고객센터 // -->
+                    </body>
+                <table>
+
+				<h2 class="content_title">새로운 부킹 [pubbok]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+                    
+					<!-- 새로운 부킹  -->
+					<tr>
+						<td>새로운 부킹</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Booking 등록</td>
+						<td>스케줄 조회 팝업</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>운송사 정보 조회 팝업</td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubbok/U0050P0.html" target="_blank">U0050P0</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Pick Up 장소 리스트 팝업</td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubbok/U0050P1.html" target="_blank">U0050P1</a></td>
+						<td></td>
+						<td>선택/불가</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>UNNO 검색 팝업</td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubbok/U0120P0.html" target="_blank">U0120P0</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>LOI Download 안내 팝업</td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubbok/U0130P0.html" target="_blank">U0130P0</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<!--<tr>
+						<td></td>
+						<td></td>
+						<td>Booking 입력/조회 </td>
+						<td>Schedule 팝업</td>
+						<td></td>
+						<td>POP_007</td>
+						<td></td>
+						<td></td>
+						<td class="yellow">삭제</td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>부킹캔슬 팝업</td>
+						<td></td>
+						<td>U0170</td>
+						<td></td>
+						<td></td>
+						<td class="yellow">삭제</td>
+					</tr> -->
+			
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>불만수집 팝업 </td>
+						<td></td>
+						<td></td>
+						<td>임시0001</td>
+						<td></td>
+						<td>화면없음!</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+
+					<tr>
+						<td></td>
+						<td>S/R Inquiry 등록</td>
+						<td>Pick up Place 선택 팝업</td>
+						<td></td>
+						<td></td>
+						<td>U0210P1</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>UNNO 팝업</td>
+						<td></td>
+						<td></td>
+						<td>U0210P0</td>
+						<td></td>
+						<td>U0120P0와 같음</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>DG/OOG Certificate 팝업 </td>
+						<td></td>
+						<td></td>
+						<td><a href="../pubbok/POP_009.html" target="_blank">POP_009</a></td>
+						<td></td>
+						<td>첨부파일: 미정 </td>
+						<td><span class="new"></span> <span class="yellow"></span></td>
+					</tr>
+
+					<!-- 새로운 부킹 //  -->
+
+					</tbody>
+				</table>
+
+
+				<h2 class="content_title">스케줄 [pubsch]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+
+                    <!-- 스케줄 -->
+	 				<tr>
+						<td>스케줄</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>구간</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><!--<a href="../pubsch/43.html" target="_blank">43</a> --> 43</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>선박</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>기간</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>이메일 전송</td>
+						<td></td>
+						<td>이메일 전송 팝업</td>
+						<td><a href="../pubsch/U0040P0.html" target="_blank">U0040P0</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<!-- 스케줄 -->
+
+					</tbody>
+				</table>
+
+				<h2 class="content_title">진행중인 업무 -수출 [pubing]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+
+					<!--  진행중인 업무 -->					
+					<tr>
+						<td>진행중인 업무</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>진행중인 업무(수출)</td>
+						<td>조회/리스트</td>
+						<td></td>
+						<td>수출업무 - On going List</td>
+						<td>45-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>수출업무 - On going List(중국)</td>
+						<td>중국001</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>수출 담당자 팝업</td>
+						<td>116</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Booking 수정</td>
+						<td>PRINT 팝업</td>
+						<td>화면 프린트</td>
+						<td>임시036</td>
+						<td></td>
+						<td>PDF파일</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Split</td>
+						<td>Booking Split</td>
+						<td>U0090</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Combine</td>
+						<td>Booking Combine</td>
+						<td>U0080</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Booking Cancel 팝업</td>
+						<td>부킹 취소 사유 입력 팝업</td>
+						<td><a href="../pubing/U0060P1.html" target="_blank">U0060P1</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상해 부킹 Cancel</td>
+						<td>상해 부킹 Cancel</td>
+						<td></td>
+						<td><a href="../pubing/U0200.html" target="_blank">U0200</a></td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>선적확정</td>
+						<td>조회</td>
+						<td>선적확정</td>
+						<td>U0440</td>
+						<td></td>
+						<td></td>
+						<td><span class="change"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>부킹 취소 사유 입력 팝업</td>
+						<td><a href="../pubing/U0170.html" target="_blank">U0170</a></td>
+						<td></td>
+						<td>U0060P1와 같음</td>
+
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>모선 변경</td>
+						<td>Booking 입력/조회 </td>
+						<td>U0050-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="change"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>S/R inquiry 조회</td>
+						<td></td>
+						<td>S/R Inquiry 조회</td>
+						<td>U0190</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>S/R inquiry 수정</td>
+						<td>HZ>File Upload 팝업</td>
+						<td>DG/OOG Certificate 팝업 </td>
+						<td><a href="../pubbok/POP_009.html" target="_blank">POP_009</a></td>
+						<td></td>
+						<td>pubbok/POP_009</td>
+						<td><span class="new"></span> <span class="yellow"></span></td>
+					</tr>
+					<!--<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>상해 부킹 Cancel 팝업</td>
+						<td> </td>
+						<td>U0200 - 위에 있음</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr> --> 
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td>B/L 작성</td>
+						<td>VGM</td>
+						<td>VGM 조회 </td>
+						<td class="del"><a href="../pubing/U0310.html" target="_blank">U0310</a></td>
+						<td></td>
+						<td>사용안함! 없어짐</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>VGM 등록 </td>
+						<td><a href="../pubing/U0300.html" target="_blank">U0300</a></td>
+						<td></td>
+						<td>팝업으로 전환!</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>SHA VGM 등록 </td>
+						<td>POP_015</td>
+						<td></td>
+						<td>U0300 = </td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>XGG VGM 등록 </td>
+						<td>POP_016</td>
+						<td></td>
+						<td>POP_015=  [ch]</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>VGM 수정 </td>
+						<td>U0320</td>
+						<td></td>
+						<td>U0300 =</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Rider 첨부 팝업</td>
+						<td> </td>
+						<td>POP_017</td>
+						<td></td>
+						<td>POP_009=</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>E/L 첨부 팝업</td>
+						<td> </td>
+						<td>U0240P4</td>
+						<td></td>
+						<td>excel파일없음</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>DG Certificate 팝업</td>
+						<td> </td>
+						<td>U0240P5</td>
+						<td></td>
+						<td>excel파일없음</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>VGM Certificate 팝업</td>
+						<td> </td>
+						<td>U0240P6</td>
+						<td></td>
+						<td>excel파일없음</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>CA내역 조회 팝업</td>
+						<td> </td>
+						<td><a href="../pubing/U0250P0.html" target="_blank">U0250P0</a></td>
+						<td></td>
+						<td> ~</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td>B/L Certificate 조회</td>
+						<td></td>
+						<td>B/L Certificate 조회</td>
+						<td>U0390</td>
+						<td></td>
+						<td>U0310=</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>B/L COPY 출력 팝업</td>
+						<td></td>
+						<td>PRT_002</td>
+						<td></td>
+						<td>??프린트문서</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Certificae 등록 화면</td>
+						<td></td>
+						<td><a href="../pubing/U0400.html" target="_blank">U0400</a></td>
+						<td></td>
+						<td>
+							~
+						</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td>B/L Certificate 등록</td>
+						<td></td>
+						<td></td>
+						<td>U0400</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>B/L Certificate 출력 팝업</td>
+						<td></td>
+						<td>RPT_008</td>
+						<td></td>
+						<td>??증명서프린트문서</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td>Pickup 정보</td>
+						<td>Pickup 정보 조회</td>
+						<td></td>
+						<td><a href="../pubing/U0630.html" target="_blank">U0630</a></td>
+						<td></td>
+						<td>~</td>
+						<td><span class="change"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Pickup 정보 변경</td>
+						<td></td>
+						<td><a href="../pubing/U0640.html" target="_blank">U0640</a></td>
+						<td></td>
+						<td> ~</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+		     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Pickup 장소 리스트</td>
+						<td></td>
+						<td>U0640-1</td>
+						<td></td>
+						<td> U0050P1 =</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+					<!--  진행중인 업무 // -->	
+
+
+					</tbody>
+				</table>
+
+
+			<h2 class="content_title">진행중인 업무 - 수입 [pubimpot]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+
+					<!--  진행중인 업무 -->					
+					<tr>
+						<td>진행중인 업무</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>진행중인 업무(수입)</td>
+						<td>조회/리스트</td>
+						<td></td>
+						<td>수입업무 - On going List</td>
+						<td>122-1</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>수입업무 - On going List</td>
+						<td>U0490</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>수입 담당자 팝업</td>
+						<td>수입 담당자 팝업</td>
+						<td>117</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>수입적하목록 PDF 팝업</td>
+						<td>수입적하목록 PDF 팝업</td>
+						<td>124</td>
+						<td></td>
+						<td></td>
+						<td><span class="new"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Delay Notice</td>
+						<td>Delay Notice</td>
+						<td>RPT_004</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>B/L Invoice 출력 팝업</td>
+						<td>B/L Invoice 출력 팝업</td>
+						<td>RPT_001</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Arrival Notice 출력 팝업</td>
+						<td>Arrival Notice 출력 팝업</td>
+						<td>RPT_003</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>B/L COPY 출력 팝업</td>
+						<td>B/L COPY 출력 팝업</td>
+						<td>RPT_002</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>D/O 출력 팝업</td>
+						<td>D/O 출력 팝업</td>
+						<td>U0560</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>해당 모선 Schedule 조회 팝업</td>
+						<td>해당 모선 Schedule 조회 팝업</td>
+						<td>POP_003</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>수입일괄처리 상세조회</td>
+						<td></td>
+						<td>Inbound Master</td>
+						<td>U0510</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>화물 도착 통지서(A/N)</td>
+						<td></td>
+						<td>화물 도착 통지서(A/N)</td>
+						<td>U0530</td>
+						<td></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+				
+					<tr>
+						<td></td>
+						<td>미해결 업무</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>나의 요청사항</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!--  진행중인 업무 // -->	
+
+
+					</tbody>
+				</table>
+
+
+				<h2 class="content_title">특수화물 선적문의</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+
+					<!-- 특수화물 선적문의 -->
+					<tr>
+						<td>특수화물 선적문의</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>위험물</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>OOG 화물</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>RF 위험물 사전승인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- 특수화물 선적문의//  --> 
+              
+
+
+					</tbody>
+				</table>
+
+
+				<h2 class="content_title">운임 </h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>		
+
+					<!-- 운임 -->
+					<tr>
+						<td>운임</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>운임문의</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>나의 운임</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- 운임//  --> 
+
+
+					</tbody>
+				</table>	
+
+				<h2 class="content_title">수츨업무</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>		
+
+					<!-- 수출업무 -->
+					<tr>
+						<td>수출업무</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>S/R Inquiry</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>ㅇㅇㅇ</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- 수출업무//  --> 
+
+
+					</tbody>
+				</table>	
+
+
+				<h2 class="content_title">정산/발행 [pubcal]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+					<!-- 정산/발행 -->
+					<tr>
+						<td>정산/발행</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>정산/발행</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>발행</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>신용거래건 정리</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td>확정 및 세금계산서 발행요청</td>
+						<td></td>
+						<td>B/L Invoice 출력 팝업</td>
+						<td>RPT_001</td>
+						<td></td>
+						<td>??프린트문서</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>B/L COPY 출력 팝업</td>
+						<td>RPT_002 </td>
+						<td></td>
+						<td>??프린트문서</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Arrival Notice 출력 팝업</td>
+						<td>RPT_003</td>
+						<td></td>
+						<td>??프린트문서</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>세금계산서 재전송 팝업</td>
+						<td><a href="../pubcal/U0760P0.html" target="_blank">U0760P0</a></td>
+						<td></td>
+						<td>~</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+				    <tr>
+						<td></td>
+						<td>정리내역 조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>신용한도 조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>가상계좌</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				    <tr>
+						<td></td>
+						<td>Freetime 요청</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+			     	<tr>
+						<td></td>
+						<td></td>
+						<td>Proforma Invoice</td>
+						<td></td>
+						<td>Proforma Invoice</td>
+						<td>U0800</td>
+						<td></td>
+						<td>화면없음</td>
+						<td><span class="keep"></span> <span class="yellow"></span></td>
+					</tr>
+
+				    <tr>
+						<td></td>
+						<td>M&R Waiver</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!--  정산/발행 -->
+
+					</tbody>
+					</table>
+
+
+				<h2 class="content_title">화물추적</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+					<tr>
+						<td>화물추적</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					</tbody>
+					</table>
+
+				<h2 class="content_title">관리자 [pubadmin]</h2>
+				<table class="tbl_type">
+					
+					<!--<colgroup>
+					<col width="10%"><col width="10%"><col width="15%"><col width="13%">
+					<col width="15%"><col width="12%"><col width="10%"><col width="15%">
+					</colgroup> -->
+					<thead>
+					<tr>
+						<th class="col1">1Depth</th>
+						<th class="col2">2Depth</th>
+						<th class="col3">3Depth</th>
+						<th class="col4">4Depth</th>
+						<th class="col5">화면명</th>
+						<th class="col6">File명</th>
+						<th class="col7"></th>
+						<th class="col8"></th>
+						<th class="col9">비고</th>
+					</tr>
+					</thead>
+				
+					<tbody>
+					<tr>
+						<td>회원관리</td>
+						<td>목록</td>
+						<td></td>
+						<td></td>
+						<td>회원관리</td>
+						<td><a href="../pubadmin/U1320.html" target="_blank">U1320</a></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>조회</td>
+						<td></td>
+						<td></td>
+						<td>회원조회</td>
+						<td>U1320</td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>이메일발송</td>
+						<td></td>
+						<td>이메일발송</td>
+						<td><a href="../pubadmin/U1320_email.html" target="_blank">U1320_email</a></td>
+						<td class="ok"><span class=""></span></td>
+						<td></td>
+						<td><span class="keep"></span></td>
+					</tr>
+					</tbody>
+					</table>
+
+			  </div><!-- content // -->	
+          </div><!-- content_box // -->
+	</div><!-- container_ekmtc // -->
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta x-ms-format-detection="none"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="../css/ekmtc.css" />
+<link href="/js/realgrid.2.3.3/realgrid-style.css" rel="stylesheet" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body>
+<div class="wrap">	
+	<div class="header"><!-- header -->
+		<div class="inner_header">
+			<h1 class="logo"><a href="home">e-kmtc</a></h1>	
+			<div class="wrap_gnb">
+			    <ul class="gnb">
+					<li><a href="#" class="on">새로운 부킹</a></li>
+					<li><a href="#">스케줄</a></li>					
+					<li><a href="#">진행중인 업무</a></li>					
+					<li><a href="#">운임</a></li>
+					<li><a href="#">정산/발행</a></li>
+					<li><a href="#">화물추적</a></li>
+				</ul>
+			</div>
+			 
+			<div class="wrap_util"><!-- wrap_util  -->
+				<div class="lang">
+					<a href="#">KR</a>
+					<ul>
+						<li><a href="#">KR</a></li>
+						<li><a href="#">EN</a></li>
+						<li><a href="#">JP</a></li>
+						<li><a href="#">CH</a></li>
+					</ul>
+				</div>
+				<p class="kmtc"><span><a href="#">KMTC</a></span></p>
+
+			    <ul class="util">
+					<li><a href="#" class="search">검색</a></li>
+					<li><a href="#" class="mypage">마이페이지</a></li>
+					<li><a href="#" class="login">로그인</a></li>
+					<li><a href="#" class="color">컬러</a></li>
+					<li><a href="#" class="menu">메뉴</a></li>
+				</ul>				
+
+			</div><!-- wrap_util //  -->
+		</div>		
+	</div><!-- header // -->
+
+	<div class="container"><!-- container -->
+
+		<div class="content resize"><!-- content : 화면 리사이징 되는 화면 resize -->		
+			<div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">Read Grid</a></li>
+				</ul>
+			</div><!-- location -->			
+
+			<h1 class="page_title">Read Grid</h1>
+
+			<div id="realgrid" class="realgrid-box">
+			</div>
+			
+		</div><!-- content // -->
+		
+	</div><!-- container// -->
+
+
+	<div class="footer"><!-- footer --> 
+		<div class="inner_footer">
+		       <div class="wrap_address">
+			   		<span class="logo_foot"></span>
+					<p class="address">서울특별시 중구 남대문로 63 한진빌딩 15층 <span class="tel">대표전화 : 02-311-6114</span></p>
+					<p class="copyright">2021 KOREA MARINE TRANSPORT CO. LTD</p>
+			   </div>
+		       
+			   <div class="wrap_rightarea">
+			   	
+				   <div class="langfoot">    
+					  <p><a href="#">KOREAN</a></p>  
+					  <ul class="lang_sub">
+						<li><a href="#">FAMILY SITE1</a></li>
+						<li><a href="#">FAMILY SITE2</a></li>
+					  </ul>            
+				   </div>
+
+				   <div class="family">    
+					  <p><a href="#">FAMILY SITE</a></p>  
+					  <ul class="family_sub">
+						<li><a href="#">FAMILY SITE1</a></li>
+						<li><a href="#">FAMILY SITE2</a></li>
+					  </ul>            
+				   </div>
+				  
+					<ul class="link">
+						<li><a href="#">이메일 무단수집거부</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li><a href="#">Contact Us</a></li>							
+					</ul>
+
+			   <div>
+		</div>
+	</div><!-- footer // --> 
+
+
+
+</div>
+
+<script type="text/javascript" charset="utf-8" src="/js/realgrid.2.3.3/realgrid.2.3.3.min.js" ></script>
+<script type="text/javascript" charset="utf-8" src="/js/mock-data.js" ></script>
+<script type="text/javascript">
+
+const realGrid2Lic = 'upVcPE+wPOmtLjqyBIh9RkM/nBOseBrflwxYpzGZyYm9cY8amGDkiMnVeQKUHJDjW2y71jtk+wuLHyQiaVbPz61TXD5tTVGxDufv8SUhNy5JuXViZDxueQ==';
+
+const fields = [
+  { fieldName: 'id', dataType: 'number' },
+  { fieldName: 'first_name', dataType: 'text' },
+  { fieldName: 'last_name', dataType: 'text' },
+  { fieldName: 'email', dataType: 'text' },
+  { fieldName: 'gender', dataType: 'text' },
+  { fieldName: 'ip_address', dataType: 'text' },
+  { fieldName: 'Monetary', dataType: 'text' },
+  { fieldName: 'KorCountry', dataType: 'text' },
+  { fieldName: 'dateTime2' },
+  { fieldName: 'dateTime3' }
+]
+
+const columns = [
+  { name: 'id', fieldName: 'id', type: 'number', header: { text: '아이디' } },
+  { name: 'first_name', fieldName: 'first_name', type: 'text', header: { text: 'FirstName' } },
+  { name: 'last_name', fieldName: 'last_name', type: 'text', header: { text: 'LastName' } },
+  { name: 'email', fieldName: 'email', type: 'text', header: { text: '이메일' } },
+  { name: 'gender', fieldName: 'gender', type: 'text', header: { text: '성별' } },
+  {
+    name: 'Monetary',
+    fieldName: 'Monetary',
+    type: 'data',
+    width: '200',
+    values: ['EUR', 'USD', 'HKD', 'KRW'],
+    labels: ['EUR', 'USD', 'HKD', 'KRW'],
+    renderer: {
+      type: 'html',
+      callback: function (grid, cell, w, h) {
+        let str = ''
+        const data = (cell.value && cell.value.split(',')) || []
+        const labels = cell.dataColumn.labels
+        const values = cell.dataColumn.values
+        for (let i = 0; i < labels.length; i++) {
+          const checked = data.indexOf(values[i]) >= 0 ? 'checked' : ''
+          str = str + "<input type='checkbox' value = '" + values[i] + "'" + checked + " onclick='valuecheck(" + cell.index.dataRow + ", event)' />" + labels[i]
+        }
+        return str
+      }
+    }
+  },
+  { name: 'KorCountry', fieldName: 'KorCountry', type: 'data', width: '150', renderer: 'renderer_imgbtn', styleName: 'left-column custom_renderer', header: { text: '투자국가', styleName: 'orange-column' } },
+  {
+    name: 'dateTime2',
+    fieldName: 'dateTime2',
+    width: '150',
+    height: '50',
+    header: {
+      text: 'bootstrap datepicker'
+    },
+    editor: {
+      type: 'btdate',
+      btOptions: {
+        startView: 0,
+        minViewMode: 0,
+        todayBtn: 'linked',
+        language: 'ko',
+        todayHighlight: true,
+        inline: true,
+        sideBySide: true
+      },
+      dropDownWhenClick: true,
+      viewGridInside: true,
+      textReadOnly: true,
+      datetimeFormat: 'yyyy-MM-dd',
+      yearNavigation: true,
+      mask: {
+        editMask: '9999-99-99',
+        includedFormat: true
+      }
+    }
+  },
+  {
+    name: 'dateTime3',
+    fieldName: 'dateTime3',
+    width: '110',
+    header: {
+      text: 'datepicker'
+    },
+    editor: {
+      type: 'date', maxLength: 6, yearNavigation: true
+    }
+
+  }
+]
+
+const container = document.getElementById('realgrid');
+const provider = new RealGrid.LocalDataProvider(false);
+const gridView = new RealGrid.GridView(container);
+gridView.setDataSource(provider);
+gridView.setColumns(columns)
+
+gridView.registerCustomRenderer('renderer_imgbtn', {
+        initContent: function (parent) {
+          var span = this._span = document.createElement('span')
+          span.className = 'custom_render_span'
+          parent.appendChild(span)
+          parent.appendChild(this._button1 = document.createElement('span'))
+          parent.appendChild(this._button2 = document.createElement('span'))
+        },
+        canClick: function () {
+          console.log('can click')
+          return true
+        },
+        clearContent: function (parent) {
+          console.log('DISPOSED......')
+          parent.innerHTML = ''
+        },
+        render: function (grid, model, width, height, info) {
+          info = info || {}
+          var span = this._span
+          // text설정.
+          span.textContent = model.value
+
+          this._value = model.value
+          this._button1.className = 'custom_search custom-hover' + (info.focused ? ' custom-focused' : '')
+          this._button2.className = 'custom_popup custom-hover' + (info.focused ? ' custom-focused' : '') + (info.focused ? ' custom-focused' : '') + (info.focused ? ' custom-focused' : '') + (info.focused ? ' custom-focused' : '') + (info.focused ? ' custom-focused' : '') + (info.focused ? ' custom-focused' : '')
+        },
+        click: function (event) {
+          if (event.target === this._button1) {
+            alert('조회버튼: ' + this._value)
+          } else if (event.target === this._button2) {
+            var i = i + 1
+            alert('팝업버튼: ' + this._value)
+          }
+          event.preventDefault()
+        }
+      })
+
+provider.setFields(fields)
+provider.setRows(tempList)
+
+function valuecheck (idx, evt) {
+	console.log(idx)
+	console.log(evt)
+}
+
+</script>
+<style>
+	.realgrid-box {
+		width: 100%;
+		height: 440px;
+	}
+</style>
+
+</body>
+</html>

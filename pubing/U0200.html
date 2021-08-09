@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body style="background:rgba(0,0,0,0.4);"><!-- 팝업 : popup_wrap 부분만 사용하세요.  -->
+
+	<div class="popup_wrap" style="width:500px; height:320px;"><!--  popup_wrap -->   
+	   <button class="layer_close">close</button>
+	   <div class="popup_cont" ><!-- popup_cont -->
+
+		 <h1 class="page_title">S/R Cancel</h1>	
+		 <div class="content_box"><!-- content_box -->            
+		
+			<table class="tbl_row fir_td">	
+				<colgroup>
+					<col width="*">
+				</colgroup>
+				<tbody>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="sr1" name="sr" />
+							Schedule canceled or delayed                        
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="sr2" name="sr" />
+							Customs declaration or commodity inspection did not pass                       
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="sr3" name="sr" />
+							Quality problems for the goods                     
+						</td>					
+					</tr>
+					<tr>						
+						<td class="text_left">
+						    <input type="radio" id="sr4" name="sr" />
+							The consignee requests extension of delivery                 
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="sr4" name="sr" />
+							Etc                
+						</td>					
+					</tr>		
+				</tbody>
+			</table> 
+			
+		 </div><!-- content_box // -->					 
+		 <div class="mt10 text_center">
+				<a class="button blue lg" href="#">확인</a>
+				<!--<a class="button gray lg fill" href="#">취소</a>-->
+		 </div>
+
+	   </div><!-- popup_cont -->
+  </div><!-- popup_wrap // -->  
+ 
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body style="background:rgba(0,0,0,0.4);"><!-- 팝업 : popup_wrap 부분만 사용하세요.  -->
+
+	<div class="popup_wrap" style="width:500px; height:420px;"><!--  popup_wrap -->   
+	   <button class="layer_close">close</button>
+	   <div class="popup_cont" ><!-- popup_cont -->
+
+		 <h1 class="page_title">Booking Cancel</h1>	
+		 <div class="content_box"><!-- content_box -->            
+		
+			<table class="tbl_row fir_td">	
+				<colgroup>
+					<col width="*">
+				</colgroup>
+				<tbody>
+					<tr>						
+						<td class="text_left">
+						    <input type="radio" id="bc1" name="bc" checked="checked" />
+							작업일정 변경                        
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="bc2" name="bc" />
+							서류 미비                        
+						</td>					
+					</tr>
+					<tr>						
+						<td class="text_left">
+						    <input type="radio" id="bc3" name="bc" />
+							컨테이너 기기 문제                     
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="bc4" name="bc" />
+							선박 스케줄 지연                   
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="bc5" name="bc" />
+							가부킹 / 선사 변경                   
+						</td>					
+					</tr>
+					<tr>					
+						<td class="text_left">
+						    <input type="radio" id="bc6" name="bc" />
+							부킹 승인 불가                  
+						</td>					
+					</tr>
+					<tr>						
+						<td class="text_left">
+						    <input type="radio" id="bc7" name="bc" />
+							기타              
+						</td>					
+					</tr>
+				</tbody>
+			</table> 
+			<p class="txt_desc asterisk">부킹 화면으로 이동하여 스케줄을 변경하시려면 아래 Booking Detail를 <br>선택해주세요.</p>
+			
+		 </div><!-- content_box // -->					 
+		 <div class="mt10 text_center">
+				<a class="button blue lg" href="#">확인</a>
+				<a class="button gray lg" href="#">취소</a>
+		 </div>
+
+	   </div><!-- popup_cont -->
+  </div><!-- popup_wrap // -->  
+ 
+</body>
+</html>

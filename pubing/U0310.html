@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body>
+
+		<div class="content resize"><!-- content : 화면 리사이징 되는 화면 resize 추가 -->
+		    <div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">진행중인 업무</a></li>
+					<li>VGM 정보 등록</li>
+				</ul>
+			</div><!-- location -->				
+
+            <h1 class="page_title">VGM 입력/조회/수정</h1>
+
+			<div class="content_box" style="padding-bottom:15px;"><!-- content_box -->				   
+				<table class="tbl_search">	
+					<colgroup>
+						<col width="70px"><col width="152px"><col width="*"><col width="110px">
+					</colgroup>
+					<tbody>
+						<tr>
+						    <th>조회정보</th>
+							<td> 
+								<select name="" id="" style="width:150px;">
+									<option value="">B/L No.</option>									
+									<option value="">Booking No.</option>
+									<option value="">On Board Date</option>
+									<option value="">Booking Date</option>
+								</select>
+							</td>
+							<td>
+							    <div><!-- B/L No.  클릭시 -->
+								    <input type="text" id="" name="" value="KMTC" disabled="disabled" style="width:45px; margin-right:-4px;">
+									<input type="text" id="" name="" style="width:120px;">
+									<input type="text" id="" name="" value="KMTC" disabled="disabled" style="width:45px;margin-right:-4px;">
+									<input type="text" id="" name="" style="width:120px;">
+									<input type="text" id="" name="" value="KMTC" disabled="disabled" style="width:45px;margin-right:-4px;">
+									<input type="text" id="" name="" style="width:120px;">
+							    </div><!-- B/L No.  클릭시 // -->
+
+							    <div style="display:none;"> <!-- Booking No. 클릭시 -->
+									<input type="text" id="" name="" style="width:150px;">
+									<input type="text" id="" name="" style="width:150px;">
+									<input type="text" id="" name="" style="width:150px;">
+							    </div><!-- Booking No. 클릭시 // -->
+
+								<div style="display:none;"> <!-- On Board Date 클릭시 -->
+									<span class="input_calendar">
+										<input type="text" class="" id="" name="" /> 
+										<button class="tbl_icon calendar">달력</button>
+									</span>
+
+									<span class="ml5 mr5">~</span>
+
+									<span class="input_calendar">
+										<input type="text" class="" id="" name="" /> 
+										<button class="tbl_icon calendar">달력</button>
+									</span>
+							    </div><!-- On Board Date 클릭시 //--> 
+							</td>
+							<td class="text_right">
+								<a class="button blue sh" href="#">검색</a>
+							</td>
+						</tr>		
+					</tbody>
+				</table>
+			</div><!-- content_box // -->
+
+			<div class="content_box mt10"><!-- content_box -->
+
+			    <table class="tbl_list">					
+					<colgroup>
+						<col width="12%">
+						<col width="12%">
+						<col width="8%">
+						<col width="10%">
+						<col width="12%">
+						<col width="12%">
+						<col width="20%">
+						<col width="14%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>B/L No.</th>
+							<th>Booking No.</th>
+							<th>CNTR</th>
+							<th>Status</th>
+							<th>POL</th>
+							<th>POD</th>
+							<th>선명/항차</th>
+							<th>Cut-Off Time</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>PUSC349237</td>
+							<td>KR02558717</td>
+							<td>1*20'</td>
+							<td>NONE</td>
+							<td>BUSAN</td>
+							<td>OSAKA</td>
+							<!-- <td class="text_left">ELBMASTER 2016E</td> 왼쪽 정렬시 class="text_left" 추가 -->
+							<td>ELBMASTER 2016E</td>
+							<td>2021.12.24 18:00</td>
+						</tr>
+						<tr>
+							<td>PUSC349237</td>
+							<td>KR02558717</td>
+							<td>1*20'</td>
+							<td>Complete</td>
+							<td>INCHEON</td>
+							<td>HIROSHIMA</td>
+							<td>KMTC NAGOYA 2021S</td>
+							<td>2021.12.24 18:00</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="txt_desc asterisk">해당 화면은 ‘S/R 제출 (SUBMIT)’ 이후 이용 가능합니다. S/R 제출 전일 경우 ‘B/L 작성’화면에서 입력바랍니다.</p>
+
+				<div class="paging"><!-- paging -->
+				    <a href="#" class="btn start">Start</a>
+					<a href="#" class="btn prev">Prev</a>
+					<a href="#" class="on">11</a>	
+					<a href="#">12</a>
+					<a href="#">13</a>
+					<a href="#">14</a>
+					<a href="#">15</a>
+					<a href="#">16</a>
+					<a href="#">17</a>
+					<a href="#">18</a>
+					<a href="#">19</a>
+					<a href="#">20</a>
+					<a href="#" class="btn next">Next</a>
+					<a href="#" class="btn end">End</a>
+				</div><!-- paging // -->
+
+				
+
+            </div><!-- content_box // -->
+      </div>
+
+</body>
+</html>

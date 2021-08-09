@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body style="background:rgba(0,0,0,0.4);"><!-- 팝업 : popup_wrap으로 싸인게 한 묶음임!  -->
+
+	<div class="popup_wrap" style="width:500px; height:460px;"><!-- popup_wrap -->   
+	   <button class="layer_close">close</button>
+	   <div class="popup_cont" ><!-- popup_cont -->
+
+		 <h1 class="page_title">Schedule Mail</h1>	
+		 <div class="content_box"><!-- content_box -->
+			<table class="tbl_row">	
+				<colgroup>
+					<col width="120"><col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>To (e-mail)</th>
+						<td>							
+							<input type="text" id="" name="">										
+						</td>
+					</tr>						
+					<tr>									
+						<th>From (e-mail)</th>
+						<td>							
+							<input type="text" id="" name="">										
+						</td>
+					</tr>
+					<tr>									
+						<th>Subject</th>
+						<td>							
+							<input type="text" id="" name="">										
+						</td>
+					</tr>
+					<tr>									
+						<th class="valign_top">Additional <br/>Message</th>
+						<td>							
+							<textarea style="height:180px;">
+								
+
+							</textarea>										
+						</td>
+					</tr>
+				</tbody>
+			</table>						
+		 </div><!-- content_box // -->					 
+		 <div class="mt10 text_center">
+				<a class="button blue lg" href="#">확인</a>
+				<a class="button gray lg" href="#">취소</a>
+		 </div>
+
+	   </div><!-- popup_cont -->
+  </div><!-- popup_wrap // -->
+
+  <br/><br/>
+  
+  <div class="popup_wrap bg_white" style="width:350px; height:330px;"><!-- popup_wrap -->  
+      <button class="layer_close">close</button>
+	  <div class="popup_cont"><!-- popup_cont -->
+          		 
+		  <div class="circle_icon notice" style="margin:30px auto 0;"></div> 		  	 
+
+	      <p class="msg text_center color_blue font_16 font_medium mt15">
+			선택하신 모선은 공동운항 모선으로<br/> UNDER DECK 선적 개런티가 불가합니다.
+          </p>
+           
+          <p class="msg text_center mt15">
+			따라서 하기  LOI DOWNLOAD를 통해 양식을 다운 받은 뒤,<br/> 내용 입력 및 B/L SHIPPER의 직인/명판 득하여<br/>
+			스캔본 업로드 부탁드립니다.
+          </p>
+		  					 
+		  <div class="mt20 text_center">
+		      <a class="button blue md" href="#"><span class="btn_icon download"></span>LOI DOWNLOAD</a>		
+	      </div>
+
+      </div><!-- popup_cont -->
+  </div><!-- popup_wrap // -->
+
+<br/><br/>
+
+    <div class="popup_wrap" style="width:900px; height:500px;"><!-- popup_wrap -->  
+      <button class="layer_close">close</button>
+	  <div class="popup_cont"><!-- popup_cont -->
+
+	  	<h1 class="page_title">새로운 부킹</h1>
+
+			<div class="content_box" style="padding-bottom:15px;"><!-- content_box -->				
+				<table class="tbl_search">	
+					<colgroup>
+						<col width="52%"><col width="45%"><col width="110px">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								<input type="radio" id="bkNo1" name="bkNo" checked="checked" />
+								<label for="bkNo1" class="mr10"><span></span>기존 Booking No에서</label>	
+								<input type="text" id="" name="" style="width:200px;">
+							</td>
+							<td>
+								<input type="radio" id="bkNo2" name="bkNo" />
+								<label for="bkNo2" class="mr10"><span></span>Template</label> 
+								<select name="" id="" style="width:200px;">
+									<option value="">선택</option>									
+									<option value="">선택2</option>
+								</select>
+							</td>	
+							<td class="text_right">
+								<a class="button blue sh" href="#">적용</a>
+							</td>
+						</tr>		
+					</tbody>
+				</table>
+			</div><!-- content_box // -->
+
+
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">부킹/서류 담당자</h2>
+
+				<div class="lybox ly_btn"><!-- 좌우 분할 중앙버튼 -->
+
+					<div  class="ly_column left_col col_5"><!-- left -->
+						<div  class="ly_col_cont">
+							<table class="tbl_row">	
+								<colgroup>
+									<col width="130"><col><col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th colspan="3" class="text_center">부킹 담당</th>										
+									</tr>
+									<tr>
+										<th>성함</th>
+										<td class="full" style="padding-right:8px;">
+											<select name="" id="">
+												<option value="">CY</option>									
+												<option value="">VY</option>
+											</select>								
+										</td>
+										<td class="border_left_none" style="padding-left:0;">
+											<input type="text" id="" name="">		
+										</td>	
+									</tr>						
+									<tr>
+										<th>전화번호</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>	
+									<tr>
+										<th>FAX</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>	
+									<tr>
+										<th>휴대전화번호</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>
+									<tr>
+										<th>E-Mail</th>
+										<td colspan="2">
+											<input type="text" id="" name="">
+											<p style="height:32px;" class="txt_desc color_notice">담당자는 최대 5명, 콤마(,)로 구분</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div><!-- left // -->
+
+					<div class="btn_col">
+						<button class="tbl_icon arrow">arrow</button>
+					</div>
+
+					<div  class="ly_column right_col col_5"><!-- right -->
+						<div  class="ly_col_cont">
+							<table class="tbl_row">	
+								<colgroup>
+									<col width="130"><col><col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th colspan="3" class="text_center">부킹 담당</th>										
+									</tr>
+									<tr>
+										<th>성함</th>
+										<td class="full" style="padding-right:8px;">
+											<select name="" id="">
+												<option value="">CY</option>									
+												<option value="">VY</option>
+											</select>								
+										</td>
+										<td class="border_left_none" style="padding-left:0;">
+											<input type="text" id="" name="">		
+										</td>	
+									</tr>						
+									<tr>
+										<th>전화번호</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>	
+									<tr>
+										<th>FAX</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>	
+									<tr>
+										<th>휴대전화번호</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="width:30%; float:left;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="width:69%; float:left;">
+													<span style="margin-left:5px;"><input type="text" id="" name=""></span>
+												</div>
+											</div>	
+										</td>
+									</tr>
+									<tr>
+										<th>E-Mail</th>
+										<td colspan="2">
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									</tr>
+									<tr>
+										<th style="letter-spacing:-1px;">전자세금계산서 수령</th>
+										<td colspan="2">
+											<div class="position_relative">
+												<div style="margin-right:25px;">
+													<input type="text" id="" name="">
+												</div>
+												<div style="position:absolute; top:1px; right:0; width:20px;">
+													<button class="tbl_icon help">help</button>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div><!-- right // -->
+
+				</div><!-- 좌우 분할 중앙버튼 // -->
+
+
+				<h2 class="content_title">Schedule</h2>
+
+				<table class="tbl_row">	
+					<colgroup>
+						<col width="130"><col><col width="130"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>출발</th>
+							<td>BUSAN KOREA <br/>ETD:2021 08.21 22:30</td>
+						    <th>도착</th>
+							<td>HONG KONG <br/>ETA:2021 08.25 09:00</td>
+						</tr>						
+						<tr>
+							<th>Vessel</th>
+							<td>
+								KMTC JEBEL ALI 2108S
+								<span class="float_right"><a class="button sm" href="#">스케쥴 변경</a></span>
+							</td>
+							<th>Term</th>
+							<td>
+								<select name="" id="" style="width:120px;">
+									<option value="">CY</option>									
+									<option value="">VY</option>
+								</select>
+								<span style="display:inline-block; width:20px; text-align:center" class="color_gray">/</span>
+								<select name="" id="" disabled="disabled" style="width:120px; display:inline-block;">
+									<option value="">CY</option>									
+									<option value="">CY</option>
+								</select>
+							</td>
+						</tr>						
+					</tbody>
+				</table>
+
+				<h2 class="content_title">화물정보</h2>
+				<table class="tbl_row">	
+					<colgroup>
+						<col width="130"><col><col width="130"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>실화주</th>
+							<td>							
+							    <input type="text" id="" name=""  style="width:60%;">
+								<span class="float_right">
+									<input type="checkbox" id="c1" name="cc" />
+									<label for="c1"><span></span>콘솔부킹</label>
+								</span>
+								
+							</td>
+						    <th>G.Weight</th>
+							<td>
+							    <input type="text" id="" name=""  style="width:80px;"> ton 
+								<span style=" display:inline-block; width:30px; text-align:center" class="color_gray">/</span>
+								<input type="text" id="" name=""  value="100" style="width:80px;" disabled="disabled"> kg
+							</td>
+						</tr>						
+						<tr>
+							<th>Booking Date</th>
+							<td>2021.06.24</td>
+							<th>SC No</th>
+							<td><input type="text" id="" name="" Value="For COLLECT Term Only"></td>
+						</tr>	
+						<tr>
+							<th>Commodity</th>
+							<td><input type="text" id="" name=""></td>
+							<th rowspan="2">Bidding No</th>
+							<td rowspan="2"><input type="text" id="" name=""></td>
+						</tr>
+						<tr>
+							<th>Ocean Freight</th>
+							<td class="full">							   
+								<select name="" id="">
+									<option value="">PREPAID</option>									
+									<option value="">PREPAID</option>
+								</select>
+							</td>							
+						</tr>
+					</tbody>
+				</table>
+
+			</div><!-- content_box // -->          		 
+		  
+
+      </div><!-- popup_cont -->
+  </div><!-- popup_wrap // -->
+
+
+  <br/><br/><br/>
+
+
+</body>
+</html>

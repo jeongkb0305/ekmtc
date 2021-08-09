@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body>
+
+		<div class="content resize"><!-- content : 화면 리사이징 되는 화면 resize 추가 -->
+		    <div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">진행중인 업무</a></li>
+					<li><a href="#">VGM 정보 등록</a></li>
+				</ul>
+			</div><!-- location -->				
+
+            <h1 class="page_title">VGM 정보 등록</h1>
+
+			<div class="content_box"><!-- content_box -->
+
+				<h2 class="content_title">B/L No. <span>PUS703502</span></h2>
+			    
+				<table class="tbl_col">					
+					<colgroup>				
+						<col width="12%">
+						<col width="8%">
+						<col width="8%">
+						<col width="8%">
+						<col width="20%">
+						<col width="14%">
+						<col width="12%">
+						<col width="12%">
+						<col width="6%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Container No.</th>
+							<th>Tare Weight(kg)</th>
+							<th>VGM Weight(kg)</th>
+							<th>Method</th>
+							<th>Signature</th>
+							<th>BKG No.</th>
+							<th>Verified Date</th>
+							<th>Verified Ref. No.</th>
+							<th>Del</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input type="text" id="" name="" value="KMTU7409302">
+							</td>
+							<td>
+								2185
+							</td>
+							<td>
+								<input type="text" id="" name="" value="16648">
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">SM2</option>									
+									<option value="">SM2</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" id="" name="" value="YEONG YEONG SEO">
+							</td>
+							<td>
+								<input type="text" id="" name="" value="KR02524519">
+							</td>
+							<td>
+								<input type="text" id="" name="" value="20191028">
+							</td>
+							<td>
+								<input type="text" id="" name="" value="">
+							</td>
+							<td><button class="tbl_icon filedel">close</button></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="tbl_col mt20">					
+					<colgroup>				
+						<col width="100px">
+						<col width="30%">
+						<col width="30%">
+						<col width="30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th></th>
+							<th>Cntr Qty</th>
+							<th>Vgm Finished</th>
+							<th>Weight</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>1</td>
+							<td>16648</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="file_attacth_box" >
+					<span class="file_input_wrap">		
+						<span class="upload_flie">
+							<input type="text" id="fileName3" value="" class="file_textbox" /> 								
+						</span>								
+						<span class="file_choice">
+							<input type="button" value="파일첨부" class="file_button" />
+							<input type="file" class="file_hidden" onchange="javascript: document.getElementById('fileName3').value = this.value" />									
+						</span>								
+					</span> 
+					<a class="button blue sm" href="#">Excel Upload</a>
+					<a class="button blue sm" href="#">Excel Download</a>
+
+				</div>
+ 
+				<p class="txt_desc asterisk color_red">VGM WEIGHT는 내폼 무게 + 고박장치 + 컨테이너 TARE WEIGHT를 총합한 정확한 무게를 기입하여 주시기 바랍니다.<br/>보여지는 TARE WEIGHT는 참고용이며, 자동합산되지 않습니다.</p>
+
+				<p class="txt_desc asterisk">국내의 경우 계측일(Verified Date), 계측인증번호(Verified Ref, No.)는 선택 입력 사항입니다.</p>
+
+				<p class="txt_desc asterisk">다수의 부킹번호에 대해 B/L 1건으로 진행시, S/R를 먼저 제출하여 부킹과 B/L번호가 매칭되도록 승인 된 이후 VGM 입력 바랍니다.</p>
+
+            </div><!-- content_box // -->
+			<div class="flex_box mt10">
+				<!-- <a class="button blue lg" href="#">새로작성</a> 왼쪽 버튼 자리 -->
+				<a class="button blue lg ml_auto mr5" href="#">SAVE</a>
+				<a class="button blue lg" href="#">CLOSE</a>
+		    </div>
+
+		</div><!-- content // -->   
+
+
+</body>
+</html>

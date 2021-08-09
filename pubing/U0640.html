@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body>
+
+		<div class="content resize"><!-- content : 화면 리사이징 되는 화면 resize 추가 -->
+		    <div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">진행중인 업무</a></li>
+					<li>Pick up 정보 변경</li>
+				</ul>
+			</div><!-- location -->				
+
+            
+
+			<div class="flex_box mt20">
+			   <h1 class="page_title">Pick up 정보 변경</h1>			
+			   <span class="ml_auto mt20"> 
+				  <a class="button md" href="#"><span class="btn_icon print"></span>프린트</a>
+			   </span>
+			</div>
+
+			<div class="content_box" style="padding-bottom:15px;"><!-- content_box -->				
+				<table class="tbl_search">	
+					<colgroup>
+						<col width="100px"><col width="20%"><col width="70px"><col>
+						<col width="70px"><col>
+						<col width="70px"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								Booking No.
+							</th>
+							<td class="full">
+								<select name="" id="">
+									<option value="">KR02559271</option>									
+									<option value="">KR02559272</option>
+								</select>
+							</td>
+							<th class="text_right">담당</th>
+							<td>해운항공</td>
+							<th>전화번호</th>
+							<td>82)02-788-9591</td>
+							<th>팩스번호</th>
+							<td>82)02-6008-8211</td>
+						</tr>		
+					</tbody>
+				</table>				
+			</div><!-- content_box // -->			
+
+			<div class="content_box mt10"><!-- content_box -->
+				
+			    <h2 class="content_title">Schedule</h2>
+				<table class="tbl_row">	
+					<colgroup>
+						<col width="130"><col><col width="130"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>출발</th>
+							<td>BUSAN, KOREA <br/>ETD : 2021.03.19 16:00</td>
+						    <th>도착</th>
+							<td>HONG KONG<br/>ETD : 2021.03.19 16:00</td>
+						</tr>
+						<tr>
+							<th>
+								선명/항차 
+								<button class="tbl_icon search ml5">minus</button>
+							</th>
+							<td>KMTC TOKYO20325</td>
+						    <th>실화주</th>
+							<td><input type="text" id="" name="" ></td>
+						</tr>
+						<tr>
+							<th>Term</th>
+							<td>
+							    <select name="" id="">
+									<option value="">CY</option>									
+									<option value="">CY</option>
+								</select>
+								<span>/</span>
+								CY
+							</td>
+						    <th>Booking Date.</th>
+							<td>2021-02-23</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="txt_desc asterisk">로그인 없이 Pick-up 일시와 장소를 수정하실 수 있습니다.</p>
+
+                <h2 class="content_title">Container Pick Up</h2>
+
+				<table class="tbl_col">					
+					<colgroup>						
+						<col width="60px">
+						<col>
+						<col width="60px">
+						<col width="80px">
+						<col width="60px">
+						<col>
+						<col width="110px">
+						<col>
+						
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="5">CONTAINER</th>
+							<th rowspan="2">특수화물 구분</th>
+							<th rowspan="2">Pick Up 일시</th>
+							<th rowspan="2">Pick Up 장소</th>
+						</tr>
+						<tr>
+							<th>Size</th>
+							<th>Type</th>
+							<th>Q'ty</th>
+							<th>화주<br/>콘테이너</th>
+							<th>Empty<br/>선적</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<select name="" id="" style="width:50px;">
+									<option value="">20</option>									
+									<option value="">100</option>
+								</select>
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">Dry</option>									
+									<option value="">Dry</option>
+								</select>
+							</td>
+							<td>
+								<input type="text" id="" name="" >
+							</td>						
+							<td>
+							   <input type="checkbox" name="" id="" >
+							</td>
+							<td>
+							   <input type="checkbox" name="" id="" disabled="disabled">
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">특수화물 구분</option>									
+									<option value=""></option>
+								</select>
+							</td>
+
+							<td>
+							    <div class="input_calendar short">
+									<input type="text" class="" id="" name=""> 
+									<button class="tbl_icon calendar">달력</button>
+								</div>
+							</td>
+							<td class="full">
+								<p><input type="text" class="" id="" name="" value="KCTC 부곡(의왕)"></p>
+								<p style="margin:5px 0;"><input type="text" class="" id="" name="" placeholder="성함"></p>
+								<p><input type="text" class="" id="" name="" placeholder="연락처"></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="tbl_row mt20">	
+					<colgroup>
+						<col width="130"><col><col width="130"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>서류마감</th>
+							<td>2021-03-17 18:00</td>
+						    <th>모션마감 담당자</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>반입마감</th>
+							<td>2021-03-18 21:00</td>
+						    <th>반입지/담당자</th>
+							<td>HBCT / 051-6308-3232</td>
+						</tr>					
+						<tr>
+							<th>EDI 신고마감</th>
+							<td>2021-03-18 21:00</td>	
+							<th>MRN/Call Sign</th>
+							<td>H8SF</td>
+						</tr>
+					</tbody>
+				</table>
+
+            </div><!-- content_box // -->
+
+			<div class="flex_box mt10">
+				<a class="button lg" href="#">리스트</a>
+				<a class="button blue lg ml_auto mr5" href="#">저장</a>	
+				<a class="button blue lg" href="#">취소</a>	
+		    </div> 
+
+		</div><!-- content // -->   
+
+
+</body>
+</html>
