@@ -72,7 +72,7 @@ div.checker input,
 input[type="search"],
 input[type="search"]:active { -moz-appearance: none; -webkit-appearance: none; }
 /* Select */
-div.selector { background-position: 0 -130px; line-height:22px; height:22px; padding: 0 0 0 0; position: relative; overflow: hidden; border:#cecece solid 1px; border-radius:0px; box-sizing:border-box;}
+div.selector { background-position: 0 -130px; line-height:24px; height:24px; padding: 0 0 0 0; position: relative; overflow: hidden; border:#cecece solid 1px; border-radius:0px; box-sizing:border-box;}
 div.selector span { font-size:12px; text-overflow: ellipsis; display: block; overflow: hidden; white-space: nowrap; background-position: right 0; height: 22px; line-height:22px; padding-left:4px; padding-right: 20px; cursor: pointer; width: 100%; display: block; }
 div.selector.fixedWidth { width: 190px; }
 div.selector.fixedWidth span { width: 155px; }
