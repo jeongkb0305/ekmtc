@@ -462,7 +462,7 @@
 						<col>
 						<col width="110px">
 						<col width="15%">
-						<col width="50px">
+						<col width="8%">
 					</colgroup>
 					<thead>
 						<tr>
@@ -470,7 +470,10 @@
 							<th rowspan="2">특수화물 구분</th>
 							<th rowspan="2">Pick Up 일시</th>
 							<th rowspan="2">Pick Up 장소</th>
-							<th rowspan="2"><button class="tbl_icon plus">plus</button></th>
+							<th rowspan="2">
+								<button class="tbl_icon plus">plus</button>
+								<button class="tbl_icon minus">minus</button>
+							</th>
 						</tr>
 						<tr>
 							<th>Size</th>
@@ -531,7 +534,10 @@
 								<p style="margin:5px 0;"><input type="text" class="" id="" name="" placeholder="성함"></p>
 								<p><input type="text" class="" id="" name="" placeholder="연락처"></p>
 							</td>
-							<td><button class="tbl_icon minus">minus</button></td>
+							<td>
+								<button class="tbl_icon plus">plus</button>
+								<button class="tbl_icon minus">minus</button>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -1345,8 +1351,9 @@
        
         <a class="button sm blue sh" href="#">검색</a>
 		<a class="button sm" href="#">스케줄 변경</a>
-		<a class="button sm" href="#">선택</a>
-		<a class="button sm red" href="#">불가</a>
+		<a class="button blue sm" href="#">선택</a>
+		<a class="button gray sm disabled" href="#">불가</a>
+		<a class="button gray sm" href="#">완료</a>
 
 		<a class="button sm" href="#"><span class="btn_icon calculator"></span>DEM/DET 계산기</a>
 
