@@ -71,7 +71,7 @@
 			
 
 			<div class="flex_box">
-			 <h1 class="page_title">새로운 부킹</h1>
+			 <h1 class="page_title">S/R inquiry Create</h1>
 			</div>
 
 			<div class="content_box" style="padding-bottom:10px;"><!-- content_box -->				
@@ -83,19 +83,19 @@
 						<tr>
 							<td>
 								<input type="radio" id="bkNo1" name="bkNo" checked="checked" />
-								<label for="bkNo1" class="mr10"><span></span>기존 Booking No에서</label>	
+								<label for="bkNo1" class="mr10"><span></span>B/L No. 已存在								</label>	
 								<input type="text" id="" name="" style="width:200px;">
 							</td>
 							<td>
 								<input type="radio" id="bkNo2" name="bkNo" />
 								<label for="bkNo2" class="mr10"><span></span>Template</label> 
 								<select name="" id="" style="width:200px;">
-									<option value="">선택</option>									
+									<option value="">没有信息111</option>									
 									<option value="">선택2</option>
 								</select>
 							</td>	
 							<td class="text_right">
-								<a class="button blue sh" href="#">적용</a>
+								<a class="button blue sh" href="#">申请</a>
 							</td>
 						</tr>		
 					</tbody>
@@ -104,93 +104,601 @@
 
 			<div class="content_box mt10"><!-- content_box -->
 
-				<h2 class="content_title">Schedule</h2>
-
+				<h2 class="content_title">E-Mail Notice</h2>
+				<div class="e_mail_notice">	
+					<p class="ic_txt">Results will be automatically informed to you by E-Mail. Do you want this service?</p>
+					<span class="inp_form">
+						<input type="radio" id="bkNo1" name="bkNo" checked="checked" />
+						<label for="bkNo1" class="mr10">YES
+					</span>
+					<span class="inp_form">
+						<input type="radio" id="bkNo2" name="bkNo" checked="checked" />
+						<label for="bkNo2" class="mr10">No
+					</span>
+				</div>
 				<table class="tbl_row">	
 					<colgroup>
-						<col width="140"><col><col width="140"><col>
+						<col style="width:100px">
+						<col style="width:auto">
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>출발</th>
-							<td>BUSAN KOREA <br/>ETD:2021 08.21 22:30</td>
-						    <th>도착</th>
-							<td>HONG KONG <br/>ETA:2021 08.25 09:00</td>
-						</tr>						
-						<tr>
-							<th>Vessel</th>
-							<td>
-								KMTC JEBEL ALI 2108S
-								<span class="float_right"><a class="button sm" href="#">스케줄 변경</a></span>
-							</td>
-							<th>Term</th>
+							<th>E-Mail</th>
 							<td>
 								<select name="" id="" style="width:120px;">
 									<option value="">CY</option>
 									<option value="">VY</option>
 								</select>
-								<span style="display:inline-block; width:20px; text-align:center" class="color_gray">/</span>
-								<select name="" id="" disabled="disabled" style="width:120px; display:inline-block;">
-									<option value="">CY</option>									
-									<option value="">CY</option>
-								</select>
+								<input type="text" class="wid200" placeholder="E-Mail">
 							</td>
-						</tr>						
+						</tr>												
 					</tbody>
 				</table>
+			</div><!-- content_box // -->
 
-				<h2 class="content_title">화물정보</h2>
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Shipper Information</h2>
 				<table class="tbl_row">	
 					<colgroup>
-						<col width="140"><col><col width="140"><col>
+						<col style="width:auto">
+						<col style="width:20%">
+						<col style="width:30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">Shipper Name / Address</th>
+							<th colspan="2" scope="col">Customer Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input type="text">
+							</td>
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<td rowspan="3"><textarea></textarea></td>
+							<th scope="row">P.I.C</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bor-left" scope="row">Tel No.</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th class="bor-left" scope="row">FAX No.</th>
+							<td></td>
+						</tr>												
+					</tbody>
+				</table>
+				<div class="mt10">
+					<table class="tbl_row">	
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:20%">
+							<col style="width:30%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Consignee Name / Address</th>
+								<th colspan="2" scope="col">Contact Point</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="text">
+								</td>
+								<th scope="row">Consignee PIC</th>
+								<td></td>
+							</tr>
+							<tr>
+								<td rowspan="3"><textarea></textarea></td>
+								<th scope="row">Consignee Tel</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th class="bor-left" scope="row">Consignee Fax</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th class="bor-left" scope="row">Consignee E-Mail</th>
+								<td></td>
+							</tr>												
+						</tbody>
+					</table>
+				</div>
+				<div class="mt10">
+					<table class="tbl_row">	
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:20%">
+							<col style="width:30%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Notify Name / Address</th>
+								<th colspan="2" scope="col">Booking Agent</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" id="copy01" />
+									<label for="copy01">Copy Consignee</label>
+									<div class="mt5">
+										<input type="text">
+									</div>
+								</td>
+								<td colspan="2">
+									<select>
+										<option>가나다라</option>
+									</select>
+								</td>							
+							</tr>
+							<tr>
+								<td rowspan="4"><textarea></textarea></td>
+								<th scope="row">Shipment no.</th>
+								<td><input type="text"></td>
+							</tr>
+							<tr>
+								<th scope="row">POL HS Code</th>
+								<td><input type="text"></td>
+							</tr>
+							<tr>
+								<th scope="row">POD HS Code</th>
+								<td><input type="text"></td>
+							</tr>
+							<tr>
+								<th scope="row">Chemical or Not</th>
+								<td>
+									<select title="Chemical or Not">
+										<option value="No">NO</option>
+									</select>
+								</td>
+							</tr>												
+						</tbody>
+					</table>
+				</div>
+			</div><!-- content_box // -->
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Service Information</h2>
+				<table class="tbl_row">	
+					<colgroup>
+						<col style="width:12%">
+						<col style="width:21%">
+						<col style="width:12%">
+						<col style="width:21%">
+						<col style="width:12%">
+						<col style="width:auto">
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>실화주</th>
-							<td>							
-							    <input type="text" id="" name=""  style="width:60%;">
-								<span class="float_right">
-									<input type="checkbox" id="c1" name="cc" />
-									<label for="c1"><span></span>콘솔부킹</label>
-								</span>
-								
-							</td>
-						    <th>G.Weight</th>
+							<th scope="row">Place of Receipt</th>
 							<td>
-							    <input type="text" id="" name=""  style="width:80px;"> ton 
-								<span style=" display:inline-block; width:30px; text-align:center" class="color_gray">/</span>
-								<input type="text" id="" name=""  value="100" style="width:80px;" disabled="disabled"> kg
+								<div>
+									<input type="text">
+								</div>
+								<div class="mt5">
+									<input type="text">
+								</div>
 							</td>
-						</tr>						
-						<tr>
-							<th>Booking Date</th>
-							<td>2021.06.24</td>
-							<th>SC No</th>
-							<td><input type="text" id="" name="" Value="For COLLECT Term Only"></td>
-						</tr>	
-						<tr>
-							<th>Commodity</th>
-							<td><input type="text" id="" name=""></td>
-							<th rowspan="2">Bidding No</th>
-							<td rowspan="2"><input type="text" id="" name=""></td>
+							<th scope="row">Place of Delivery</th>
+							<td>
+								<div>
+									<input type="text">
+								</div>
+								<div class="mt5">
+									<input type="text">
+								</div>
+							</td>
+							<th scope="row">Port of Loading</th>
+							<td>
+								<div>
+									<input type="text">
+								</div>
+								<div class="mt5">
+									<input type="text">
+								</div>
+							</td>
 						</tr>
 						<tr>
-							<th>Ocean Freight</th>
-							<td class="full">							   
-								<select name="" id="">
-									<option value="">PREPAID</option>									
-									<option value="">PREPAID</option>
+							<th scope="row">Vessel / Voyage</th>
+							<td>
+								<div>
+									<input type="text">
+								</div>
+								<div class="search_btn mt5">
+									<input class="wid80p" type="text">
+									<span>
+										<button class="btn_v" type="button"></button>
+									<span>
+								</div>
+							</td>
+							<th scope="row">Port of Discharge</th>
+							<td>
+								<div>
+									<input type="text">
+								</div>
+								<div class="mt5">
+									<input type="text">
+								</div>
+							</td>
+							<th scope="row">Final Destination</th>
+							<td class="full">
+								<div>
+									<select name="" id="" title="Select a Country">
+										<option>select a country</option>
+									</select>
+								</div>
+								<div class="mt5">
+									<select name="" id="" title="Select Place">
+										<option>Select Place</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Service Term</th>
+							<td class="full">
+								<div>
+									<select name="" id="" title="Select service term">
+										<option>CY</option>
+									</select>
+								</div>
+								<div class="mt5">
+									<select name="" id="" title="Select service term">
+										<option>CY</option>
+									</select>
+								</div>
+							</td>
+							<th scope="row">Place of B/L Issue</th>
+							<td class="full">
+								<div>
+									<select name="" id="" title="Select Country">
+										<option>CY</option>
+									</select>
+								</div>
+								<div class="mt5">
+									<select name="" id="" title="Select Place">
+										<option>Select Place</option>
+									</select>
+								</div>
+							</td>
+							<th scope="row">Freight</th>
+							<td class="full">
+								<div>
+									<select name="" id="" title="Freight">
+										<option>Prepaid</option>
+									</select>
+								</div>
+							</td>
+						</tr>												
+					</tbody>
+				</table>
+				
+				
+				<div class="mt10">
+					<table class="tbl_row">	
+						<colgroup>
+							<col style="width:15%">
+							<col style="width:35%">
+							<col style="width:15%">
+							<col style="width:35%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">No of Package Code</th>
+								<td>
+									<div class="tbl_form">
+										<span>
+											<input type="text" style="width:80px;">
+										</span>
+										<span style="width:90%">
+											<select>
+												<option>select</option>
+											</select>
+										</span>
+									</div>
+								</td>
+								<th scope="row">Commodity</th>
+								<td>
+									<input type="text">
+								</td>							
+							</tr>
+							<tr>
+								<th scope="row">Gross Weight</th>
+								<td>
+									<input class="wid85p" type="text" placeholder="0"> <span class="unit">KGS</span>
+								</td>
+								<th scope="row">Measurement</th>
+								<td>
+									<input class="wid85p" type="text" placeholder="0"> <span class="unit">KGS</span>
+								</td>						
+							</tr>												
+						</tbody>
+					</table>
+				</div>
+			</div><!-- content_box // -->
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Shipper/Consignee/Notify Additional Information</h2>
+				<table class="tbl_row">	
+					<colgroup>
+						<col style="width:12%">
+						<col style="width:21%">
+						<col style="width:21%">
+						<col style="width:21%">
+						<col style="width:auto">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2"></th>
+							<th scope="col">지역</th>
+							<th scope="col">City (시/군)</th>
+							<th scope="col">State / Province(도)</th>
+							<th scope="col">Postal Code(우편번호)</th>
+						</tr>
+						<tr>
+							<th scope="col">담당자</th>
+							<th scope="col">전화번호</th>
+							<th scope="col">Fax No.</th>
+							<th scope="col">E-Mail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">Shipper</th>
+							<td class="full">
+								<select>
+									<option>select</option>
 								</select>
-							</td>							
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Consignee</th>
+							<td class="full">
+								<select>
+									<option>select</option>
+								</select>
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">Notify</th>
+							<td class="full">
+								<select>
+									<option>select</option>
+								</select>
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+							<td>
+								<input type="text">
+							</td>
+						</tr>											
+					</tbody>
+				</table>
+				<div class="mt10">
+					<table class="tbl_row">	
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:30%">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">Shipper Company ID</th>
+								<td class="full">
+									<select title="">
+										<option>Packages</option>
+									</select>
+								</td>
+								<td>
+									<input type="text">
+								</td>							
+							</tr>
+							<tr>
+								<th scope="row">Consignee Company ID</th>
+								<td class="full">
+									<select title="">
+										<option>Packages</option>
+									</select>
+								</td>
+								<td>
+									<input type="text">
+								</td>					
+							</tr>
+							<tr>
+								<th scope="row">Notify Company ID</th>
+								<td class="full">
+									<select title="">
+										<option>Packages</option>
+									</select>
+								</td>					
+								<td>
+									<input type="text">
+								</td>
+							</tr>												
+						</tbody>
+					</table>
+				</div>
+			</div><!-- content_box // -->
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Container Information</h2>
+				<table class="tbl_col">					
+					<colgroup>						
+						<col width="10%">
+						<col width="15%">
+						<col width="12%">
+						<col width="10%">
+						<col width="15%">
+						<col width="12%">
+						<col width="auto">
+						<col width="10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">Size</th>
+							<th scope="col">Type</th>
+							<th scope="col">Q’ty</th>
+							<th scope="col">Cargo</th>
+							<th scope="col">Full/Empty</th>
+							<th scope="col">Shpr<br>Van</th>
+							<th scope="col">自有箱</th>
+							<th scope="col">Empty Container<br> loading</th>
+							<th scope="col"><button class="tbl_icon plus">plus</button> <button class="tbl_icon minus">plus</button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="full">
+								<select name="" id="">
+									<option value="">20</option>									
+									<option value="">100</option>
+								</select>
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">Dry</option>									
+								</select>
+							</td>
+							<td>
+								<input type="text" />
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">Select</option>									
+								</select>
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">Full</option>									
+									<option value="">Empty</option>
+								</select>
+							</td>
+							<td class="full">
+								<select name="" id="">
+									<option value="">No</option>									
+								</select>
+							</td>
+							<td class="full">
+								<div class="input_calendar short">
+									<input type="text" class="" id="" name=""> 
+									<button class="tbl_icon calendar">달력</button>
+									<div class="mt5">
+										<select name="" id="">
+											<option value="">09:00</option>									
+										</select>
+									</div>
+								</div>
+							</td>
+							<td>
+							    <input type="text">
+							</td>
+							<td><button class="tbl_icon minus">minus</button> <button class="tbl_icon plus">plus</button></td>
 						</tr>
 					</tbody>
-				</table>				
-
+				</table>
 			</div><!-- content_box // -->
-			<div class="flex_box mt10">
-				<a class="button lg" href="#">새로작성</a>
-				<a class="button blue lg ml_auto mr5" href="#">임시저장</a>
-				<a class="button blue lg" href="#">SR Create</a>
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Request</h2>
+				<table class="tbl_col">					
+					<colgroup>						
+						<col width="50%">
+						<col width="auto">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">CY(Depot) Remark</th>
+							<th scope="col">Document Remark</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<textarea></textarea>
+							</td>
+							<td>
+								<textarea></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- content_box // -->
+			
+			<div class="btn_right_wrap mt10">
+				<a class="button lg blue mr5" href="#">임시저장</a>
+				<a class="button blue lg mr5" href="#">저장</a>
+				<a class="button gray lg" href="#">취소</a>
 		    </div>
 
 	    </div><!-- content // -->	
@@ -372,35 +880,10 @@
 					<a href="#" class="btn next">Next</a>
 					<a href="#" class="btn end">End</a>
 				</div><!-- paging // -->
-
 			</div><!-- content_box// -->
-
 			 <a class="button blue lg mt10 layer_open" onClick="document.getElementById('popup_box').style.display='block'">레이어팝업 테스트</a>
-
         </div><!-- content // -->            
-
-
-          <div class="quick_wrap"><!-- quick_wrap -->
-			  <a href="#" class="quick_open"><span>open</span></a> 
-			  <div class="quick_box"><!-- quick_box -->
-					
-				<div class="quick_cont">
-					우측 영역우측 영역우측 영역우측 영역우측 영역 
-					우측 영역우측 영역우측 영역우측 영역우측 영역
-					우측 영역우측 영역우측 영역우측 영역우측 영역<br/><br/>		
-					1280 이하 화면에서 클릭안해도 자동으로 닫히게 해야 함! (ex:몇초후?)	<br/><br/>
-					
-					해상도가 줄면 왼쪽 본문 영역 가로 사이즈가 줄어든다 <br/>
-					단, 진행중인 업무는 가로 영역이 줄지 않는다.<br/>
-					 
-					<a href="#" class="quick_close"><span>close</span></a> 
-				</div>			
-			  </div><!-- quick_box // -->
-          </div><!-- quick_wrap // -->
-          
 	</div><!--  ##### container_ekmtc //  ##### -->
-
-
 	<div class="footer"><!-- footer --> 
 		<div class="inner_footer">
 		       <div class="wrap_address">
