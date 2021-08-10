@@ -15,6 +15,39 @@
 <script src="../js/jquery-ui-1.11.4.js"></script>
 <script src="../js/jquery-uniform.js"></script>
 <script src="../js/ekmtc_ui.js"></script>
+<script> 
+
+	$(function(){
+		 /* input clear */
+				$('.inputClear input[type="text"]').on('input propertychange', function() {
+
+					var $this = $(this);
+
+					var visible = Boolean($this.val());
+
+					$this.siblings('.icon_clear').toggleClass('hidden', !visible);
+
+				}).trigger('propertychange'); 
+
+				$('.icon_clear').click(function() {
+
+					$(this).siblings('input[type="text"]').val('')
+
+						.trigger('propertychange').focus();
+
+				});					
+
+	});
+
+</script> 
+<style>
+	/*  inputClear  설정   */   
+	::-ms-clear {  display: none;	}
+	.inputClear { position: relative; }	 
+	.icon_clear { position:absolute; top:5px; right:10px; cursor: pointer; display:inline-block; width: 14px;height: 14px; background:url(../images/common/icon_clear.png) 0 0 no-repeat; }
+	
+</style> 
+
 </head>
 
 <body>
@@ -54,9 +87,12 @@
 				
 				<div class="searchLayer_wrap" style="display:block; position:absolute; right:-20px; top:38px;"><!-- searchLayer_wrapp   -->  
 					<div class="cont" ><!-- cont -->
-					  		 
+
 					  <div>
-						<input type="text" id="" name="">
+						<span class="inputClear">
+							<input type="text" id="" name="" />
+							<span class="icon_clear"></span>
+						</span>
 						<a class="button" href="#">검색</a>
 					  </div>					  
 					  <ul class="sch_list">
