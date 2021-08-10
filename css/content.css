@@ -291,7 +291,7 @@ a.button { color:#0641b8; }
 .tbl_icon.arrow  { width:24px; height:24px; background-image:url(../images/common/icon_arrow.png) }
 .tbl_icon.arrow:hover { width:24px; height:24px; background-image:url(../images/common/icon_tbl_all.png); background-position: -25px 0; }
 .tbl_icon.help   { width:20px; height:20px; background-image:url(../images/common/icon_help.png) }
-.tbl_icon.search  { width:23px; height:19px; background-image:url(../images/common/icon_search.png) }
+.tbl_icon.search  { width:24px; height:24px; background-image:url(../images/common/icon_search.png) }
 .tbl_icon.calendar{ width:13px; height:12px; background-image:url(../images/common/icon_calendar.png); }
 .tbl_icon.attach  { width:14px; height:14px; background-image:url(../images/common/icon_attach.png) }
 .tbl_icon.new     { width:16px; height:16px; background-image:url(../images/common/icon_new.png); margin-bottom:2px; }
