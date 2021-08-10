@@ -125,6 +125,13 @@ div.checker.focus { /*outline:1px dotted #8f6c44;*/ position:relative; z-index:1
 .float_none  { float: none !important; }
 .ml_auto, .mx_auto { margin-left: auto !important; }
 .mr_auto, .mx_auto { margin-right: auto !important; }
+
+.d_none { display: none !important; }
+.d_inline { display: inline !important; }
+.d_inline_block {display: inline-block !important; }
+.d_block { display: block !important; }
+.d_flex { display: flex !important; }
+.d_inline_flex { display: inline-flex !important; }
 .d_flex_center {
     display: flex;
     justify-content: center;
@@ -185,6 +192,7 @@ div.checker.focus { /*outline:1px dotted #8f6c44;*/ position:relative; z-index:1
 .file_input_wrap .upload_flie {  position:relative; float:left; display:inline-block; }
 .file_input_wrap .upload_flie .delete {  position:absolute; top:8px; right:0; width:12px; height:12px; text-indent:-9999px; background: url(../images/common/icon_delete.png) no-repeat 0 0 ; }
 
+.mt2  { margin-top:2px; }
 .mt5  { margin-top:5px; }
 .mt8  { margin-top:8px; }
 .mt10 { margin-top:10px; }
