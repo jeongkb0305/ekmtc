@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>고려해운 E-service</title>
+<meta charset="utf-8" />
+<meta x-ms-format-detection="none"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/ekmtc.css" />
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-ui-1.11.4.js"></script>
+<script src="../js/jquery-uniform.js"></script>
+<script src="../js/ekmtc_ui.js"></script>
+</head>
+
+<body>
+<div class="wrap">	
+
+	<div class="header"><!-- header -->
+		<div class="inner_header">
+			<h1 class="logo"><a href="home">e-kmtc</a></h1>	
+			<div class="wrap_gnb">
+			    <ul class="gnb">
+					<li><a href="#" class="on">새로운 부킹</a></li>
+					<li><a href="#">스케줄</a></li>					
+					<li><a href="#">진행중인 업무</a></li>					
+					<li><a href="#">운임</a></li>
+					<li><a href="#">정산/발행</a></li>
+					<li><a href="#">화물추적</a></li>
+				</ul>
+			</div>
+			 
+			<div class="wrap_util"><!-- wrap_util  -->
+				<div class="lang">
+					<a href="#">KR</a>
+					<ul>
+						<li><a href="#">KR</a></li>
+						<li><a href="#">EN</a></li>
+						<li><a href="#">JP</a></li>
+						<li><a href="#">CN</a></li>
+					</ul>
+				</div>
+				<p class="kmtc"><span><a href="#">KMTC</a></span></p>
+
+			    <ul class="util">
+					<li><a href="#" class="search">검색</a></li>					
+					<li><a href="#" class="logout">로그아웃</a></li> <!-- 로그인 : class="login"  -->					
+					<li><a href="#" class="customer">고객센터</a></li>
+					<li><a href="#" class="menu">메뉴</a></li>
+				</ul>				
+
+			</div><!-- wrap_util //  -->
+		</div>		
+	</div><!-- header // -->
+        
+	<div class="container_ekmtc"><!--   ##### container_ekmtc  #####-->
+
+		<div class="content resize"><!-- content : 우측quick_wrap 닫히면 resize 제거 -->		
+		    <div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">새로운 부킹</a></li>
+					<li>새로운 부킹</li>
+				</ul>
+			</div><!-- location -->
+
+			
+
+			<div class="flex_box">
+			 <h1 class="page_title">새로운 부킹</h1>
+			</div>
+
+			<div class="content_box" style="padding-bottom:10px;"><!-- content_box -->				
+				<table class="tbl_search">	
+					<colgroup>
+						<col width="50%"><col width="40%"><col width="150px">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								<input type="radio" id="bkNo1" name="bkNo" checked="checked" />
+								<label for="bkNo1" class="mr10"><span></span>기존 Booking No에서</label>	
+								<input type="text" id="" name="" style="width:200px;">
+							</td>
+							<td>
+								<input type="radio" id="bkNo2" name="bkNo" />
+								<label for="bkNo2" class="mr10"><span></span>Template</label> 
+								<select name="" id="" style="width:200px;">
+									<option value="">선택</option>									
+									<option value="">선택2</option>
+								</select>
+							</td>	
+							<td class="text_right">
+								<a class="button blue sh" href="#">적용</a>
+							</td>
+						</tr>		
+					</tbody>
+				</table>
+			</div><!-- content_box // -->
+
+			<div class="content_box mt10"><!-- content_box -->
+
+				<h2 class="content_title">Schedule</h2>
+
+				<table class="tbl_row">	
+					<colgroup>
+						<col width="140"><col><col width="140"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>출발</th>
+							<td>BUSAN KOREA <br/>ETD:2021 08.21 22:30</td>
+						    <th>도착</th>
+							<td>HONG KONG <br/>ETA:2021 08.25 09:00</td>
+						</tr>						
+						<tr>
+							<th>Vessel</th>
+							<td>
+								KMTC JEBEL ALI 2108S
+								<span class="float_right"><a class="button sm" href="#">스케줄 변경</a></span>
+							</td>
+							<th>Term</th>
+							<td>
+								<select name="" id="" style="width:120px;">
+									<option value="">CY</option>
+									<option value="">VY</option>
+								</select>
+								<span style="display:inline-block; width:20px; text-align:center" class="color_gray">/</span>
+								<select name="" id="" disabled="disabled" style="width:120px; display:inline-block;">
+									<option value="">CY</option>									
+									<option value="">CY</option>
+								</select>
+							</td>
+						</tr>						
+					</tbody>
+				</table>
+
+				<h2 class="content_title">화물정보</h2>
+				<table class="tbl_row">	
+					<colgroup>
+						<col width="140"><col><col width="140"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>실화주</th>
+							<td>							
+							    <input type="text" id="" name=""  style="width:60%;">
+								<span class="float_right">
+									<input type="checkbox" id="c1" name="cc" />
+									<label for="c1"><span></span>콘솔부킹</label>
+								</span>
+								
+							</td>
+						    <th>G.Weight</th>
+							<td>
+							    <input type="text" id="" name=""  style="width:80px;"> ton 
+								<span style=" display:inline-block; width:30px; text-align:center" class="color_gray">/</span>
+								<input type="text" id="" name=""  value="100" style="width:80px;" disabled="disabled"> kg
+							</td>
+						</tr>						
+						<tr>
+							<th>Booking Date</th>
+							<td>2021.06.24</td>
+							<th>SC No</th>
+							<td><input type="text" id="" name="" Value="For COLLECT Term Only"></td>
+						</tr>	
+						<tr>
+							<th>Commodity</th>
+							<td><input type="text" id="" name=""></td>
+							<th rowspan="2">Bidding No</th>
+							<td rowspan="2"><input type="text" id="" name=""></td>
+						</tr>
+						<tr>
+							<th>Ocean Freight</th>
+							<td class="full">							   
+								<select name="" id="">
+									<option value="">PREPAID</option>									
+									<option value="">PREPAID</option>
+								</select>
+							</td>							
+						</tr>
+					</tbody>
+				</table>				
+
+			</div><!-- content_box // -->
+			<div class="flex_box mt10">
+				<a class="button lg" href="#">새로작성</a>
+				<a class="button blue lg ml_auto mr5" href="#">임시저장</a>
+				<a class="button blue lg" href="#">SR Create</a>
+		    </div>
+
+	    </div><!-- content // -->	
+
+		<div class="content"><!-- content *진행중인 업무는 width:1280px 고정  -->		
+		    <div class="location"><!-- location -->
+				<ul>	
+				    <li><a href="#" class="home">home</a></li>
+					<li><a href="#">진행중인 업무</a></li>
+					<li>진행중인 업무</li>
+				</ul>
+			</div><!-- location -->			
+		
+			<h1 class="page_title">진행중인 업무</h1>
+
+			<div class="tab"><!-- tab -->
+				<ul>
+					<li class="on"><a href="#">진행중인 업무</a></li>
+					<li><a href="#">미해결 업무</a></li>
+					<li><a href="#">나의 요청사항</a></li>
+				</ul>
+			</div><!-- tab // -->
+
+			<div class="content_box beforetab"><!-- content_box : 라운드박스 앞에 탭(tab) 있을 경우 beforetab  추가 -->
+
+				<div class="tab sub"><!-- tab s -->
+					<ul>
+						<li class="on"><a href="#">서류 진행 현황</a></li>
+						<li><a href="#">컨테이너 진행 현황</a></li>					
+					</ul>
+				</div><!-- tab // -->
+
+				<table class="tbl_list font_sm">					
+					<colgroup>	
+						<col width="40px">
+
+						<col width="80px">
+						<col width="80px">
+						<col width="80px">
+
+						<col width="90px">
+						<col width="90px">
+						<col width="90px">
+						<col width="90px">
+
+						<col width="80px">
+						<col width="80px">
+						<col width="80px">
+						<col width="80px">
+						<col width="80px">
+
+						<col width="40px">
+						<col width="50px">
+						<col width="40px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th rowspan="2"></th>						
+							<th rowspan="2">BKG NO.<br/>(Status)</th>
+							<th rowspan="2">B/L NO.<br/>(Status)</th>
+							<th rowspan="2">선적 확정</th>
+							<th rowspan="2">실화주</th>
+							<th rowspan="2">출발지<br/>ETD</th>
+							<th rowspan="2">도착지<br/>ETA</th>
+							<th rowspan="2">VSL/VOY</th>
+							<th rowspan="2">CNTR</th>
+							<th rowspan="2">CARGO</th>
+							<th colspan="3">서류 진행 현황</th>
+							<th rowspan="2">LOG<br/>조회</th>
+							<th rowspan="2">담당자<br/>연락처</th>
+							<th rowspan="2"></th>
+						</tr>
+						<tr>
+							<th>서류마감</th>
+							<th>정산</th>
+							<th>발급</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+							   <input type="checkbox" name="" id="" checked="checked" >
+							</td>
+							<td class="text_left">
+								KR2020001<br/>
+								승인
+							</td>
+							<td class="text_left">
+								 PUSD123456<br/>
+								 승인
+							</td>
+							<td>
+								확정<br/>
+								<select name="" id="" style="width:80px;"> 
+									<option value="">NO</option>									
+									<option value="">YES</option>
+								</select>
+							</td>
+							<td>고려제강</td>
+
+							<td class="text_left">
+							   BUSAN,KR <br/>JAN 30 09H (+11) 
+							</td>
+							<td class="text_left">
+								HAIPHONG,VN<br/>FEB 04 11H (+11)
+							</td>
+							<td>
+								KMTC TOLYO <br/> 2012S
+							</td>
+							<td>
+								20'GP X2 <br/> 40'HC X1
+							</td>
+							<td>STEEL</td>
+							<td>21 FEB 16H</td>
+							<td>운임미등록</td>
+							<td>WAYBILL <br/>(SURRENDER O.B/L)</td>
+							<td><button class="tbl_icon log">조회</button></td>
+							<td><button class="tbl_icon tel">연락처</button></td>
+							<td><button class="tbl_icon down">조회</button></td>
+						</tr>
+
+						<tr>
+							<td>
+							   <input type="checkbox" name="" id="" >
+							</td>
+							<td class="text_left">
+								KR2020001<br/>
+								승인
+							</td>
+							<td class="text_left">
+								 PUSD123456<br/>
+								 승인
+							</td>
+							<td>
+								확정<br/>
+								<select name="" id="" style="width:80px;">
+									<option value="">모선변경</option>									
+									<option value="">모선변경</option>
+								</select>
+							</td>
+							<td>고려제강</td>
+
+							<td class="text_left">
+							   최대20자까지 가능. 최대20자까지 가능. 
+							</td>
+							<td class="text_left">
+								HAIPHONG,VN<br/>FEB 04 11H (+11)
+							</td>
+							<td class="text_left">
+								KMTC TOLYO <br/> 2012S
+							</td>
+							<td>
+								20'GP X2 <br/> 40'HC X1
+							</td>
+							<td>STEEL</td>
+							<td>21 FEB 16H</td>
+							<td>미정산</td>
+							<td>WAYBILL <br/>(SURRENDER O.B/L)</td>
+							<td><button class="tbl_icon log">조회</button></td>
+							<td><button class="tbl_icon tel">연락처</button></td>
+							<td><button class="tbl_icon down">조회</button></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="paging"><!-- paging -->
+				    <a href="#" class="btn start">Start</a>
+					<a href="#" class="btn prev">Prev</a>
+					<a href="#" class="on">11</a>	
+					<a href="#">12</a>
+					<a href="#">13</a>
+					<a href="#">14</a>
+					<a href="#">15</a>
+					<a href="#">16</a>
+					<a href="#">17</a>
+					<a href="#">18</a>
+					<a href="#">19</a>
+					<a href="#">20</a>
+					<a href="#" class="btn next">Next</a>
+					<a href="#" class="btn end">End</a>
+				</div><!-- paging // -->
+
+			</div><!-- content_box// -->
+
+			 <a class="button blue lg mt10 layer_open" onClick="document.getElementById('popup_box').style.display='block'">레이어팝업 테스트</a>
+
+        </div><!-- content // -->            
+
+
+          <div class="quick_wrap"><!-- quick_wrap -->
+			  <a href="#" class="quick_open"><span>open</span></a> 
+			  <div class="quick_box"><!-- quick_box -->
+					
+				<div class="quick_cont">
+					우측 영역우측 영역우측 영역우측 영역우측 영역 
+					우측 영역우측 영역우측 영역우측 영역우측 영역
+					우측 영역우측 영역우측 영역우측 영역우측 영역<br/><br/>		
+					1280 이하 화면에서 클릭안해도 자동으로 닫히게 해야 함! (ex:몇초후?)	<br/><br/>
+					
+					해상도가 줄면 왼쪽 본문 영역 가로 사이즈가 줄어든다 <br/>
+					단, 진행중인 업무는 가로 영역이 줄지 않는다.<br/>
+					 
+					<a href="#" class="quick_close"><span>close</span></a> 
+				</div>			
+			  </div><!-- quick_box // -->
+          </div><!-- quick_wrap // -->
+          
+	</div><!--  ##### container_ekmtc //  ##### -->
+
+
+	<div class="footer"><!-- footer --> 
+		<div class="inner_footer">
+		       <div class="wrap_address">
+			   		<span class="logo_foot"></span>
+					<p class="address">서울특별시 중구 남대문로 63 한진빌딩 15층 <span class="tel">대표전화 : 02-311-6114</span></p>
+					<p class="copyright">2021 KOREA MARINE TRANSPORT CO. LTD</p>
+			   </div>
+		       
+			   <div class="wrap_rightarea">
+			   	
+				   <div class="langfoot">    
+					  <p><a href="#">KOREAN</a></p>  
+					  <ul class="lang_sub">
+						<li><a href="#">FAMILY SITE1</a></li>
+						<li><a href="#">FAMILY SITE2</a></li>
+					  </ul>            
+				   </div>
+
+				   <div class="family">    
+					  <p><a href="#">FAMILY SITE</a></p>  
+					  <ul class="family_sub">
+						<li><a href="#">FAMILY SITE1</a></li>
+						<li><a href="#">FAMILY SITE2</a></li>
+					  </ul>            
+				   </div>
+				  
+					<ul class="link">
+						<li><a href="#">이메일 무단수집거부</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li><a href="#">Contact Us</a></li>							
+					</ul>
+
+			   <div>
+		</div>
+	</div><!-- footer // --> 
+
+
+	<div class="popup_dim"><!-- popup_dim --> 
+
+		  <div class="popup_wrap" style="width:500px; height:480px; ">  
+			   <button class="layer_close">close</button>
+			   <div class="popup_cont" ><!-- popup_cont -->
+
+				 <h1 class="page_title">Schedule Mail</h1>	
+				 <div class="content_box"><!-- content_box -->
+					<table class="tbl_row">	
+						<colgroup>
+							<col width="120"><col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>To (e-mail)</th>
+								<td>							
+									<input type="text" id="" name="">										
+								</td>
+							</tr>						
+							<tr>									
+								<th>From (e-mail)</th>
+								<td>							
+									<input type="text" id="" name="">										
+								</td>
+							</tr>
+							<tr>									
+								<th>Subject</th>
+								<td>							
+									<input type="text" id="" name="">										
+								</td>
+							</tr>
+							<tr>									
+								<th class="valign_top">Additional <br/>Message</th>
+								<td>							
+									<textarea style="height:180px;">
+										
+
+									</textarea>										
+								</td>
+							</tr>
+						</tbody>
+					</table>						
+				 </div><!-- content_box // -->					 
+				 <div class="mt10 text_center">
+						<a class="button blue lg fill" href="#">SEND</a>
+						<a class="button gray lg fill" href="#">CANCEL</a>
+				 </div>
+
+			   </div><!-- popup_cont -->
+		  </div><!-- popup_wrap // -->
+
+	  </div><!-- popup_dim // -->
+
+</div>
+</body>
+</html>
