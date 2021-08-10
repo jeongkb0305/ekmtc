@@ -72,8 +72,8 @@ div.checker input,
 input[type="search"],
 input[type="search"]:active { -moz-appearance: none; -webkit-appearance: none; }
 /* Select */
-div.selector { background-position: 0 -130px; line-height:22px; height:22px; padding: 0 0 0 4px; position: relative; overflow: hidden; border:#cecece solid 1px; border-radius:0px;}
-div.selector span { font-size:12px; text-overflow: ellipsis; display: block; overflow: hidden; white-space: nowrap; background-position: right 0; height: 22px; line-height:22px; padding-right: 20px; cursor: pointer; width: 100%; display: block; }
+div.selector { background-position: 0 -130px; line-height:22px; height:22px; padding: 0 0 0 0; position: relative; overflow: hidden; border:#cecece solid 1px; border-radius:0px; box-sizing:border-box;}
+div.selector span { font-size:12px; text-overflow: ellipsis; display: block; overflow: hidden; white-space: nowrap; background-position: right 0; height: 22px; line-height:22px; padding-left:4px; padding-right: 20px; cursor: pointer; width: 100%; display: block; }
 div.selector.fixedWidth { width: 190px; }
 div.selector.fixedWidth span { width: 155px; }
 div.selector select { opacity: 0; filter: alpha(opacity=0); -moz-opacity: 0; border: none; background: none; position: absolute; height:22px; padding:3px 0; top:0px; left: 0px; width: 100%; }

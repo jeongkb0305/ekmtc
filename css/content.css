@@ -116,19 +116,19 @@ a.button { color:#0641b8; }
 }
 .tbl_list td .subject_view_cont { padding:10px 10px 0 0; line-height:18px; } 
 .tbl_list td .subject_view_cont p { margin:5px 0 20px; }
-.tbl_list td .file_box { margin:2px 0;  color:#666;}
+.tbl_list td .file_box { margin:2px 0; color:#666; }
 
      
     /* table input 100% */
 	.tbl_search td input { width:100%; }
-	.tbl_row td input { width:100%; }
-	.tbl_col td input { width:100%; }
-	.tbl_list td input { width:100%; }
+	.tbl_row td input    { width:100%; }
+	.tbl_col td input    { width:100%; }
+	.tbl_list td input   { width:100%; }
     /* table select 100% */
 	.tbl_search td.full div.selector,
 	.tbl_row td.full div.selector,		
-	.tbl_list td.full div.selector { width:98.6% !important; }
-    .tbl_col td.full div.selector  { width:94% !important; }
+	.tbl_list td.full div.selector { width:100% !important; }
+    .tbl_col td.full div.selector  { width:100% !important; }
 
 .tbl_schedule,.tbl_schedule th,.tbl_schedule td {  font-size: 14px; }
 .tbl_schedule { width:100%; }
@@ -136,7 +136,9 @@ a.button { color:#0641b8; }
 .tbl_schedule td { height:90px; padding:3px 5px 3px; border-top:1px solid #E2E4EC; border-left:1px solid #E2E4EC; background:#ffffff; color:#333; letter-spacing: -0.12px; font-size:12px; font-weight: 400; text-align:left; vertical-align:top;  font-family: Roboto;  }
 .tbl_schedule th:first-child, .tbl_schedule td:first-child {  border-left:0; }
 .tbl_schedule th:first-child, .tbl_schedule td:first-child span { color: #d81d6c; }
-.tbl_schedule th:last-child,  .tbl_schedule td:last-child span { color: #1823b6; }
+.tbl_schedule th:last-child,  .tbl_schedule td:last-child span  
+
+{ color: #1823b6; }
 
 .tbl_schedule td span { display:block; font-size:14px; font-weight:500; }
 .tbl_schedule td p { line-height:14px; margin:5px 0 5px 0; width:110px; }
@@ -373,7 +375,7 @@ a.button { color:#0641b8; }
 
 @media screen and (max-width : 1280px) {  /* 1280px 이하 */
 
-	.tbl_row td.full div.selector { width:98% !important; }
+	.tbl_row td.full div.selector { width:100% !important; }
 
 }
 
