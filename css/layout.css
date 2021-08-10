@@ -95,7 +95,7 @@ body { background-color: #e9ebf3; min-width:920px;  }
     color:#999999;
 }
 .footer .inner_footer .wrap_address { position:relative; float:left; margin:24px 0 0 105px; }
-.footer .inner_footer .wrap_address .logo_foot { position:absolute; top:10px; left:-78px; width:53px; height:38px; background:url(../images/common/logo_foot.png) no-repeat;}
+.footer .inner_footer .wrap_address .logo_foot { position:absolute; top:10px; left:-78px; width:54px; height:40px; background:url(../images/common/logo_foot.png) no-repeat;}
 .footer .inner_footer .wrap_address .address   { margin:0 0 0 0; color:#999; font-size:16px; }
 .footer .inner_footer .wrap_address .address .tel { position:relative; z-index:1; display:inline-block; margin-left:20px;}
 .footer .inner_footer .wrap_address .copyright { margin:15px 0 0 0;color:#737373; font-size:12px;  }
@@ -157,6 +157,10 @@ body { background-color: #e9ebf3; min-width:920px;  }
 .popup_wrap .layer_close { position:absolute; top:20px; right:20px; z-index:10009; width:22px; height:22px; border:0; background:url(../images/common/icon_popclose.png) no-repeat 0 0; text-indent:-9999px; }
 .popup_wrap .layer_close:hover { } 
 
+.tooltip_wrap { padding:11px 13px 20px 20px; border:1px solid  #CCCED9; border-radius:4px; background:#fff; }
+.tooltip_wrap .cont  { position:relative;  margin:0; padding:0; }
+.tooltip_wrap .close { position:absolute; top:-5px; right:0px; z-index:10009; width:14px; height:14px; border:0; background:url(../images/common/icon_popclose.png) no-repeat 0 0; background-size:14px 14px; text-indent:-9999px; }
+.tooltip_wrap .title {  margin:5px 0 0 0; color:#000; font-size:14px; font-weight:500; }
 
 @media screen and (max-width : 1280px) {  /* 1280px 이하 */	
 	
