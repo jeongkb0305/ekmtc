@@ -366,6 +366,25 @@ a.button { color:#0641b8; }
 .idpwd_sch input { width:80px; }
 .idpwd_sch input.id { width:130px; }
 
+/*S/R inquiry Create*/
+.ic_txt {display:inline-block; margin-right:30px;}
+.inp_form {display:inline-block; margin-right:50px;}
+.wid200 {width:200px !important;}
+.wid80 {width:80px !important;}
+.bor-left {border:1px solid #e1e3eb !important;}
+.wid80p {width:80% !important;}
+.wid85p {width:85% !important;}
+.wid100p {width:100% !important;}
+.btn_v {background:url(../images/common/icon_util_search.png) no-repeat center; width:22px; height:22px; border:none;}
+.tbl_row td .search_btn {position:relative;}
+.tbl_row td .search_btn .btn_v {position:absolute; bottom:2px; right:0;}
+.tbl_row td .unit {display:inline-block; margin-left:5px; vertical-align:middle;}
+.tbl_row td .tbl_form {display:table; width:100%;}
+.tbl_row td .tbl_form span {display:table-cell;}
+.tbl_row td.full .tbl_form_type1 span .selector {width:80% !important;}
+.btn_right_wrap {text-align:right;}
+.e_mail_notice {margin-bottom:10px;}
+
 
 @media screen and (max-width : 1280px) {  /* 1280px 이하 */
 
