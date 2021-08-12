@@ -2,7 +2,7 @@
 
 .location { width:100%; height:20px; margin:0 0 0 0;}
 .location li { float: left; margin:0 10px 0 0; padding-left:15px; color:#000000; background:url(../images/common/icon_location.png) no-repeat 0 6px; }
-.location li:first-child { background:none; }
+.location li:first-child { background:none; padding-left:0; }
 .location a  { display: block; color:#666; font-size:14px; font-weight:300; } 
 .location a:hover { color:#666; }
 .location a.home { width:20px; padding:0; margin:0; background:url(../images/common/icon_home.png) no-repeat 0 2px; text-indent:-9999%; }
@@ -120,15 +120,16 @@ a.button { color:#0641b8; }
 
      
     /* table input 100% */
-	.tbl_search td input { width:100%; }
-	.tbl_row td input    { width:100%; }
-	.tbl_col td input    { width:100%; }
-	.tbl_list td input   { width:100%; }
+	.tbl_search td input[type="text"],
+	.tbl_row    td input[type="text"],
+	.tbl_col    td input[type="text"],
+	.tbl_list   td input[type="text"]  { width:100%; }
+	
     /* table select 100% */
-	.tbl_search td.full div.selector,
-	.tbl_row td.full div.selector,		
-	.tbl_list td.full div.selector { width:100% !important; }
-    .tbl_col td.full div.selector  { width:100% !important; }
+	.tbl_search td.full select,
+	.tbl_row    td.full select,
+	.tbl_col    td.full select,		
+	.tbl_list   td.full select { width:100% !important; }
 
 .tbl_schedule,.tbl_schedule th,.tbl_schedule td {  font-size: 14px; }
 .tbl_schedule { width:100%; }
@@ -394,7 +395,7 @@ a.button { color:#0641b8; }
 
 @media screen and (max-width : 1280px) {  /* 1280px 이하 */
 
-	.tbl_row td.full div.selector { width:100% !important; }
+	/*.tbl_row td.full div.selector { width:100% !important; }*/
 
 }
 

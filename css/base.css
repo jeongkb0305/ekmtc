@@ -42,7 +42,7 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="password"],
-textarea{ background-image:none; -webkit-appearance:none; color:#000; font-size:13px; box-sizing:border-box;  border:#cecece solid 1px; border-radius:0px;resize:none; vertical-align:middle;  outline:none;}
+textarea { background-image:none; -webkit-appearance:none; color:#000; font-size:13px; box-sizing:border-box;  border:#cecece solid 1px; border-radius:0px;resize:none; vertical-align:middle;  outline:none;}
 
 input[type="text"],
 input[type="email"],
@@ -70,9 +70,18 @@ input[type="email"][disabled]:focus,
 input[type="tel"][disabled]:focus { border-color:#e1e1e1; }
 
 input:focus,
-textarea:focus { border-color:#0641b8; }
+textarea:focus, textarea:focus.action  { border-color:#0641b8; }
 
-select { height:22px; padding:0 15px 0 10px; /* border: solid 1px #cecece !important; */color:#000; font-size:13px; }
+select { height:24px; padding:0 25px 0 5px;  border: solid 1px #cecece !important; color:#000; font-size:13px; letter-spacing:-1px;
+		-webkit-appearance: none; -moz-appearance: none; appearance: none;
+		 background: url(../images/common/uiSelectBg.png) no-repeat right 50%;
+}
+select::-ms-expand  { display: none; }
+select[readonly], select[disabled] { color:#b7b7b7; border:1px solid #e1e1e1; background:#f6f6f6 url(../images/common/uiSelectBg_disabled.png) no-repeat right 50% !important; }
+select[readonly]:focus, select[disabled]:focus { border-color:#e1e1e1; }
+select:focus { border-color:#0641b8 !important; outline:none; }
+select.select_year { width:70px; }
+select.select_month { width:50px; }
 
 input.input_error { border:1px solid #f2084f;}
 
@@ -83,10 +92,31 @@ input.input_error { border:1px solid #f2084f;}
 
 /*div.selector select { width: 100% !important; }*/
 
-div.selector span,  div.selector select option { font-size:13px !important; font-weight:200 !important; }
+/*div.selector span,  div.selector select option { font-size:13px !important; font-weight:200 !important; }
 div.selector.focus,
 div.radio.focus,
-div.checker.focus { /*outline:1px dotted #8f6c44;*/ position:relative; z-index:10; }
+div.checker.focus { position:relative; z-index:10; } 제거  */
+
+input[type="radio"],input[type="checkbox"]{position:absolute;width:1px;height:1px;margin:-1px;border:0;overflow:hidden;padding:0;clip:rect(0,0,0,0);-webkit-appearance:none;opacity:0}
+input[type="radio"]+label,input[type="checkbox"]+label{display:inline-block;position:relative;min-height:22px;line-height:22px;margin-left:10px;padding-left:24px;cursor:pointer;word-break:keep-all}
+input[type="radio"]+label.input,input[type="checkbox"]+label.input{min-height:40px}
+input[type="radio"]:first-child+label,input[type="checkbox"]:first-child+label{margin-left:0}
+input[type="radio"]+label.sg,input[type="checkbox"]+label.sg{padding-left:22px;vertical-align:middle}
+input[type="radio"]+label:before,input[type="checkbox"]+label:before{content: '';position:absolute;top:1px;left:0;width:18px;height:18px}
+input[type="radio"]+label.input:before,input[type="checkbox"]+label.input:before{top:9px}
+input[type="radio"]+label:before{background:url(../images/common/icon_radio.png) 0 0 no-repeat}
+input[type="radio"]:checked+label:before{background-position:0 -18px}
+input[type="radio"]:disabled+label {cursor:default;}
+input[type="radio"]:disabled+label:before {cursor:default;}
+input[type="radio"]:disabled+label:before{background-position:0 -54px}
+input[type="radio"]:disabled:checked+label:before{background-position:0 -36px}
+input[type="checkbox"]+label:before{background:url(../images/common/icon_checkbox.png) 0 0 no-repeat}
+input[type="checkbox"]:checked+label:before{background-position:0 -18px}
+input[type="checkbox"]:checked+label:before{background-position:0 -18px}
+input[type="checkbox"]:disabled+label {cursor:default;}
+input[type="checkbox"]:disabled+label:before {cursor:default;}
+input[type="checkbox"]:disabled+label:before{background-position:0 -54px}
+input[type="checkbox"]:disabled:checked+label:before{background-position:0 -36px}
  
 .roboto  { font-family: 'Roboto', sans-serif; }
 
