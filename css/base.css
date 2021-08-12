@@ -103,7 +103,7 @@ input[type="radio"]+label,input[type="checkbox"]+label{display:inline-block;posi
 input[type="radio"]+label.input,input[type="checkbox"]+label.input{min-height:40px}
 input[type="radio"]:first-child+label,input[type="checkbox"]:first-child+label{margin-left:0}
 input[type="radio"]+label.sg,input[type="checkbox"]+label.sg{padding-left:22px;vertical-align:middle}
-input[type="radio"]+label:before,input[type="checkbox"]+label:before{content: '';position:absolute;top:2px;left:0;width:18px;height:18px}
+input[type="radio"]+label:before,input[type="checkbox"]+label:before{content: '';position:absolute;top:2px;left:0;width:18px;height:18px;}
 input[type="radio"]+label.input:before,input[type="checkbox"]+label.input:before{top:9px}
 input[type="radio"]+label:before{background:url(../images/common/icon_radio.png) 0 0 no-repeat}
 input[type="radio"]:checked+label:before{background-position:0 -18px}
